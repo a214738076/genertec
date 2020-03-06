@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日报展示</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="../lib/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/demos.css">
+</head>
+<body>
+
+<div class="weui-cells__title">筛选条件</div>
+    <div class="weui-cells weui-cells_form">
+      <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="" class="weui-label">日期</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="date" type="date" value="2020-02-29" onchange="dateChange()">
+        </div>
+      </div>
+      <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="date" class="weui-label">部门</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="department" type="text" value="数字化创新部">
+        </div>
+      </div>
+    </div>
+
+<div class="weui-cells__title">当日事项</div>
+<div class="weui-media-box weui-media-box_small-appmsg" id="dailyList"></div>
+
+<div class="weui-cells__title">次日计划</div>
+<div class="weui-media-box weui-media-box_small-appmsg" id="tomorrowDailyList"></div>
+
+
+<div class="weui-cells__title">项目雷达</div>
+    <div class="weui-cells_bd">
+        <div class="box" id="proEcharts"></div>
+    </div>
+
+<!--    <div class="weui-cells__tips">底部说明文字底部说明文字</div>-->
+
+    <script src="../lib/jquery-2.1.4.js"></script>
+    <script src="../lib/fastclick.js"></script>
+
+    <script src="../js/jquery-weui.js"></script>
+    <script src="../js/echarts.js"></script>
+    <script src="../js/show.js"></script>
+
+</body>
+</html>

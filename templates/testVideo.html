@@ -1,0 +1,49 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5视频自动循环播放</title>
+</head>
+<body>
+
+<!--    <h1>HTML5视频自动循环播放</h1>-->
+    <video id="videoID" controls="controls" style="width:800px">
+<!--    <video id="videoID" height="auto" controls="controls" autoplay = "autoplay">-->
+	  <source src="{% static "jiankangzhongguo1.mp4"%}" type="video/mp4"/>
+	</video>
+</body>
+
+<script  type="text/javascript">
+    window.onload = function(){
+        var local1 = document.getElementById("videoID");
+        local1.autoplay = true;
+        local1.muted=true;
+        if(local1.paused){
+            local1.play();
+        }else{
+            local1.pause();
+        }
+    }
+
+    var vList = ["{% static "jiankangzhongguo1.mp4"%}", "{% static "jiankangzhongguo2.mp4"%}", "{% static "jiankangzhongguo3.mp4"%}"]; //初始化播放列表
+    var vLen = vList.length;
+    var curr = 1;
+    var local1 = document.getElementById("videoID");
+    local1.addEventListener('ended', function(){
+        loopplay();
+    });
+
+    function loopplay(){
+        local1.src = vList[curr];
+        local1.load();
+        local1.play();
+        curr++;
+        if(curr >= vLen){
+            curr = 0;  //重新循环播放
+        }
+    }
+
+</script>
+
+</html>

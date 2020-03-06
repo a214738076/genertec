@@ -1,0 +1,357 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html>
+
+
+<head>
+    <meta charset="gb2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>数字化创新中心</title>
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="{% static "css/amazeui.min.css"%}" />
+    <link rel="stylesheet" href="{% static "css/admin.css"%}">
+    <link rel="stylesheet" href="{% static "css/app.css"%}">
+    <script src="{% static "js/echarts.min.js"%}"></script>
+    <script src="{% static "js/jquery.min.js"%}"></script>
+    <script src="{% static "js/amazeui.min.js"%}"></script>
+    <script src="{% static "js/getdata.js"%}"></script>
+    <script src="{% static "js/iscroll.js"%}"></script>
+    <script src="{% static "js/app.js"%}"></script>
+	<script>
+		window.onload = function(){
+			setInterval("getTime();", 1000); //每隔一秒运行一次
+
+			loadErpStatus();
+			loadVPNstatus();
+			refreshKouhao();
+
+			var local1 = document.getElementById("videoID");
+	        local1.autoplay = true;
+	        local1.muted=true;
+	        if(local1.paused){
+	            local1.play();
+	        }else{
+	            local1.pause();
+	        }
+		}
+
+ 		//取得系统当前时间
+	    function getTime() {
+	        var myDate = new Date();
+	        var year = myDate.getFullYear();
+	        var month = myDate.getMonth()+1;
+	        var day = myDate.getDate();
+	        var weekday=myDate.getDay();
+	        var weekdayCh=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+	        var hours = myDate.getHours();
+	        var minutes = myDate.getMinutes();
+			var seconds = myDate.getSeconds();
+	        if (day < 10) {
+	            day = "0" + day;
+	        }
+
+	        if (hours<10)
+	        {
+	            hours = "0" + hours;
+	        }
+
+	        if (minutes < 10) {
+	            minutes = "0" + minutes;
+	        }
+
+			if (seconds < 10) {
+	            seconds = "0" + seconds;
+	        }
+
+	      $("#ServerTime").html(year + "年" + month + "月" + day + "日" + " "  + hours + ":" + minutes + ":" + seconds);//这里的sj是显示的控件的id
+	    }
+
+
+		function appStatusIni(){
+			$('#App01Div').css('background-color','');
+			$('#App02Div').css('background-color','');
+			$('#App01Font').css('color','#c0c0c0');
+			$('#App02Font').css('color','#c0c0c0');
+			}
+			
+		
+		function loadPortalStatus() {
+			var xmlhttp;
+			if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			}
+			else {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function() {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+				var html = xmlhttp.responseText;
+				var s = html.split(",");
+				if (s.length==4){
+					appStatusIni();
+					$('#App01Div').css('background-color','#ffe153');
+					$('#App01Font').css('color','#0076b0');
+					$('#SystemTitle').html("集成办公用户访问量实时统计");
+					$('#statDPV1').html("<b>"+s[0]+"</b>");
+					$('#statDPV2').html("<b>"+s[1]+"</b>");
+					$('#statDPV3').html("<b>"+s[2]+"</b>");
+					$('#statDPV4').html("<b>"+s[3]+"</b>");
+					$('#statDPT1').html("10分钟活跃");
+					$('#statDPT2').html("1小时活跃");
+					$('#statDPT3').html("今日累计");
+					$('#statDPT4').html("累积访问量");
+				}
+			  }
+			}
+			xmlhttp.open("POST","https://api.genertec.com.cn/portal/ajax.asp",true);
+			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			xmlhttp.send('action=loadPortalStatus');
+		}
+
+		pagereloadCheck()
+
+		function loadVPNini() {
+			var xmlhttp;
+			if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			}
+			else {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function() {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+				var html = xmlhttp.responseText;
+			  }
+			}
+			xmlhttp.open("POST","https://api.genertec.com.cn/portal/ajax.asp",true);
+			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			xmlhttp.send('action=loadVPNini');
+		}
+
+		function pagereloadCheck() {
+			var xmlhttp;
+			if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			}
+			else {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function() {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+				var html = xmlhttp.responseText;
+				if (html=="1"){location.reload();}
+			  }
+			}
+			xmlhttp.open("POST","https://api.genertec.com.cn/portal/ajax.asp",true);
+			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			xmlhttp.send('action=needRefresh');
+		}
+
+
+	</script>
+
+</head>
+
+<body data-type="index">
+
+    <div class="tpl-page-container" style="top:0px;height:100%;background-image: url({% static "img/screen_bg.jpg"%});background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed;">
+            <div class="row" style="margin-top:0px;">
+                <div class="am-u-md-7 am-u-sm-12">
+					<img src="{% static "img/title.png"%}" width="100%" style="margin-top:30px;">
+                </div>
+                <div class="am-u-md-5 am-u-sm-12">
+					<h2 style="text-align:center;">
+						<span style="display:none;" id="CurTimeDisplay"></span>
+						<span style="position:relative;font-weight:bold;font-size:36px;line-height:40px;font-family:微软雅黑,Arial;color:#FFFFFF;margin:0;padding-top:0;border:0;">
+							<br>
+							<span id="ServerTime">2020年2月19日 13:15:00</span>		
+						</span>
+
+					</h2>
+						
+                </div>
+			</div>
+			
+			<div class="row" style="margin-top:40px;">
+
+                <div class="am-u-md-6 am-u-sm-12" style="margin-top:20px;margin-left:40px;border:0px solid #FFFFFF;">
+					<link rel="stylesheet" href="{% static "css/style.css"%}">
+
+					<div class="slider" style="width:600px;">
+					  <div class="slider-container">
+						    <video id="videoID" controls="controls" style="width:650px;">
+							  <source src="{% static "jiankangzhongguo1.mp4"%}" type="video/mp4"/>
+							</video>
+					  </div>
+					</div>
+					<script  type="text/javascript">
+
+					    var vList = ["{% static "jiankangzhongguo1.mp4"%}", "{% static "jiankangzhongguo2.mp4"%}", "{% static "jiankangzhongguo3.mp4"%}"]; //初始化播放列表
+					    var vLen = vList.length;
+					    var curr = 1;
+					    var local1 = document.getElementById("videoID");
+					    local1.addEventListener('ended', function(){
+					        loopplay();
+					    });
+
+					    function loopplay(){
+					        local1.src = vList[curr];
+					        local1.load();
+					        local1.play();
+					        curr++;
+					        if(curr >= vLen){
+					            curr = 0;  //重新循环播放
+					        }
+					    }
+
+					</script>
+					<div style="left:150px;">
+					<h2 id="kouhao" style="font-size:30px;line-height:40px;color:white;">
+					</h2>	
+					</div>
+
+<!--				<marquee style="margin-top:-20px;width:100%;border:0px solid #FFFFFF;" scrollamount=5>
+					<h2 style="font-size:30px;line-height:40px;color:white;">
+						任何团队的核心骨干，都必须学会在没有鼓励，没有认可，没有帮助，没有理解，没有宽容，没有退路，只有压力的情况下，一起和团队获得胜利。成功，只有一个定义，就是对结果负责。如果你靠别人的鼓励才能发光，你最多算个灯泡。我们必须成为发动机，去影响其他人发光，你自然就是核心！
+					</h2>
+				</marquee>
+-->
+
+                </div>
+                <div class="am-u-md-1 am-u-sm-12" style="border:0px solid #FFFFFF;">&nbsp; 
+                </div>
+                <div class="am-u-md-4 am-u-sm-12" style="padding:5px;border:0px solid #FFFFFF;">
+					<div class="row">
+						<h2 id="SystemTitle" style="display:none;padding:5px;border:0px solid #FFFFFF;"></h2>
+						<div class="am-u-md-4 am-u-sm-12" style="padding:5px;border:0px solid #FFFFFF;">
+							<h2 style="font-size:20px;line-height:30px;color:white;text-align:center">系统运行统计</h2>
+						</div>
+						<div id="App01Div" class="am-u-md-4 am-u-sm-12" style="padding:5px;border:0px solid #FFFFFF;border-radius:10px;">
+							<h2 id="App01Font" style="font-size:20px;line-height:30px;text-align:center">集成办公系统</h2>
+						</div>
+						<div id="App02Div" class="am-u-md-4 am-u-sm-12" style="padding:5px;border:0px solid #FFFFFF;border-radius:10px;">
+							<h2 id="App02Font" style="font-size:20px;line-height:30px;text-align:center">贸易板块ERP</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="am-u-md-6 am-u-sm-12" style="padding:5px;border:0px solid #FFFFFF;">
+							<div class="dashboard-stat blue">
+								<div class="visual"><i class="am-icon-comments-o"></i></div>
+								<div class="details">
+									<div class="number" id="statDPV1">&nbsp;</div>
+									<div class="desc" id="statDPT1">10分钟活跃</div>
+								</div>
+							</div>
+						</div>
+						<div class="am-u-md-6 am-u-sm-12" style="padding:5px;border:0px solid #FFFFFF;">
+							<div class="dashboard-stat red">
+								<div class="visual">
+									<i class="am-icon-comments-o"></i>
+								</div>
+								<div class="details">
+									<div class="number" id="statDPV2">&nbsp; </div>
+									<div class="desc" id="statDPT2"> 1小时活跃 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-top:-20px;">
+						<div class="am-u-md-6 am-u-sm-12" style="padding:5px;border:0px solid #FFFFFF;">
+							<div class="dashboard-stat green">
+								<div class="visual">
+									<i class="am-icon-comments-o"></i>
+								</div>
+								<div class="details">
+									<div class="number" id="statDPV3">&nbsp; </div>
+									<div class="desc" id="statDPT3"> 今日累计 </div>
+								</div>
+							</div>
+						</div>
+						<div class="am-u-md-6 am-u-sm-12" style="padding:5px;border:0px solid #FFFFFF;">
+							<div class="dashboard-stat purple">
+								<div class="visual">
+									<i class="am-icon-comments-o"></i>
+								</div>
+								<div class="details">
+									<div class="number" id="statDPV4">&nbsp; </div>
+									<div class="desc" id="statDPT4"> 历史累计 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row" style="margin-top:-20px;">
+						<div class="am-u-md-12 am-u-sm-12" style="padding:5px;border:0px solid #FFFFFF;">
+							<h2 style="font-size:20px;line-height:30px;color:white;text-align:center">集团专线网络实时流量统计</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="am-u-md-12 am-u-sm-12" style="font-weight:bold;text-align:center;padding:5px;border:0px solid #FFFFFF;">
+							<img id="vpnimage" src="http://mrtg.genertec.com.cn/data2/10.1.254.126_212-day.png" width="100%">
+							<table style="width:100%;margin:5px;font-size:14px;">
+								<tr style="height:30px;">
+									<td colspan="2" align="left" style="font-size:16px;" id="vpntitle"></td>
+									<td align="right">最大</td>
+									<td align="right">平均</td>
+									<td align="right">当前</td>
+								</tr>
+								<tr class="in" style="height:18px;">
+									<td align="left">&nbsp;</td>
+									<td align="right">流入：</td>
+									<td align="right" id="vpndata1"></td>
+									<td align="right" id="vpndata2"></td>
+									<td align="right" id="vpndata3"></td>
+								</tr>
+								<tr class="out" style="height:18px;">
+									<td align="left" id="vpnsn">&nbsp;</td>
+									<td align="right">流出：</td>
+									<td align="right" id="vpndata4"></td>
+									<td align="right" id="vpndata5"></td>
+									<td align="right" id="vpndata6"></td>
+								</tr>
+								<tr style="height:22px;">
+									<td colspan="5" align="right" style="font-weight:normal;line-height:30px;" id="vpntime"></td>
+								</tr>
+							</table>						
+						</div>
+					</div>
+				</div>						
+	                <div class="am-u-md-1 am-u-sm-12">&nbsp; 
+                </div>
+
+            </div>
+
+	</div>
+
+ 
+
+<!-- 	<script>
+	function refreshData(){
+		pagereloadCheck();
+
+		if($('#SystemTitle').html()=="集成办公用户访问量实时统计"){
+			loadErpStatus();
+			$('#kouhao').html("当遇到困难踌躇不前时，想想是否已全力以赴");
+		}
+		else{
+			loadPortalStatus();
+			$('#kouhao').html("当获得成绩沾沾自喜时，想想可否能做得更好");
+		}
+		loadVPNstatus();
+		// setTimeout("refreshData();",15000)
+	}
+	appStatusIni();
+	loadVPNini();
+	refreshData();
+	</script> -->
+
+</body>
+
+</html>
