@@ -1,48 +1,117 @@
-var arrAttenderMap = {
-'数字化创新部' : ['陈宇玲', '卢彤', '赵杰', '许力', '王胜军', '唐瑞', '王天舒', '乔禹', '赵紫峰', '尹丹娜', '钱宝超', '李旭东', '张涛', '刘洁彬', '邓庆野', '周艺', '肖亚男'],
-'信息安全和云服务部' : ['蔡铁军', '方永宏', '于晖', '崔岩', '王彦龙', '许京鹏', '杭喆昊', '方毅'],
-'IT治理部': ['李焱', '丁艳', '戴雷'] };
+//var dataJson = require('../data/project.json'); //with path
+//import * from '../data/project.json'
 
 var id=0;
+var arrProject = [0];
 
-   $(function() {
-        FastClick.attach(document.body);
-        $('#projectData').hide();
-        $('#showProject').hide();
-        init();
-   });
-
-$("#isProject").click(function () {
-    if ($(this).is(":checked")) {
-        $('#projectData').show();
-        $('#showProject').show();
-    } else {
-         $('#projectData').hide();
-         $('#showProject').hide();
-    }
+$(function() {
+//    init();
+//    initDomain($('#department').val());
+//    initArrProjectHtml($('#department').val());
 });
-
-/*获取get传参*/
-function getQueryString(name) {
-    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-    var r = window.location.search.substr(1).match(reg);
-    if (r != null) return decodeURI(r[2]); return null;
-}
 
 function init(){
     var date = getQueryString('date');
     $('#date').val(date);
     var department = getQueryString('department');
     $('#department').val(department);
-    initAttender();
+
     var idTmp = getQueryString('id');
     if(idTmp){
-	id = idTmp;
+	    id = idTmp;
     	initPageById(id);
     }else{
-	id=0;
+	    id=0;
+    }
+}
+
+
+function initArrProjectHtml(department){
+    var domainHtml = initDomain(department);
+    var tmpPre =  '<div class="weui-cell weui-cell_swiped">' +
+                  '<div class="weui-cell weui-cell_select weui-cell_select-before">' +
+                  '<div class="weui-cell__hd">' +
+                  '<select class="weui-select" style="width:145px" id="domain';
+    var tmpMid = '" onchange="initProjectList()">' + domainHtml + '</select></div>' +
+                     '<div class="weui-cell"><div class="weui-cell__bd">' +
+                     '<input class="weui-input" type="text" placeholder="选择项目" id="projectsList';
+    var tmpEnd = '"></div></div></div></div>' +
+                '<div class="weui-cell__ft">' +
+                '<a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout" href="javascript:">删除</a></div>' +
+                '</div>';
+
+    var html = '';
+
+    for(var i=0; i<arrProject.length; i++){
+        html += tmpPre + arrProject[i] +  tmpMid + arrProject[i] + tmpEnd;
     }
 
+    console.log(html);
+    $('#arrProject').html(html);
+}
+
+
+function addArrProjectHtml(){
+    var department = $('#department').val();
+    var domainHtml = initDomain(department);
+    var tmpPre = '<div class="weui-cell weui-cell_select weui-cell_select-before">' +
+                 '<div class="weui-cell__hd">' +
+                 '<select class="weui-select" style="width:145px" id="domain';
+    var tmpMid = '" onchange="initProjectList()">' + domainHtml + '</select></div>' +
+                     '<div class="weui-cell"><div class="weui-cell__bd">' +
+                     '<input class="weui-input" type="text" placeholder="选择项目" id="projectsList';
+    var tmpEnd = '"></div></div></div></div>';
+    var html =  $('#arrProject').html();
+
+    i = arrProject.length;
+    html += tmpPre + i +  tmpMid + i + tmpEnd;
+    $('#arrProject').html(html);
+
+    arrProject.push(i);
+    console.log(arrProject);
+}
+
+
+function initDomain(department){
+    var tmpHtml = '';
+    var tmpDomain = projects[department];
+    for(var p in tmpDomain){
+        tmpHtml += '<option value='+p+'>' + p  + '</option>';
+    }
+    return tmpHtml;
+//    console.log(tmpHtml);
+//    $('#domain').html(tmpHtml);
+//    initProjectList();
+}
+
+function addProject(){
+    console.log('test');
+}
+
+function initProjectList(){
+    var department = $('#department').val();
+    var domain = $('#domain').val();
+
+//   console.log(itemsPro);
+
+    var itemsPro = [];
+
+    for(var i=0; i< projects[department][domain].length; i++){
+        var tmp = {'title' : projects[department][domain][i], 'value': projects[department][domain][i]};
+        itemsPro.push(tmp);
+    }
+
+       $("#projectsList").select({
+        title: "项目名称",
+        multi: true,
+//        min: 1,
+        items: itemsPro,
+        onClose: function (d) {
+            console.log('close');
+        }
+      });
+
+      console.log(itemsPro);
 }
 
 function initPageById(id){
@@ -53,43 +122,21 @@ function initPageById(id){
         url:"http://127.0.0.0:8888/dailyreport/?action=get&id="+ id,
         contentType: "application/x-www-form-urlencoded;charset=UTF-8",
         success:function(result){
-		if(result.data[0]['tag'] == 'daily'){ 
-			$('#isProject').attr("checked", false);
-       			$('#projectData').hide();
-       			$('#showProject').hide();
-		}else{
-			$('#isProject').attr("checked", true);
-			$('#projectData').show();
-       	 		$('#showProject').show();
-		}
-		
-		$('#description').val(result.data[0]['description']);
-		$('#partner').val(result.data[0]['partner']);
-		$('#customer').val(result.data[0]['customer']);
-		$('#productdesign').val(result.data[0]['productdesign']);
-		$('#teamwork').val(result.data[0]['teamwork']);
-		$('#orgnization').val(result.data[0]['orgnization']);
-		$('#management').val(result.data[0]['management']);
-		$('#operation').val(result.data[0]['operation']);
-		$('#competence').val(result.data[0]['competence']);
+            $('#description').val(result.data[0]['description']);
+            $('#partner').val(result.data[0]['partner']);
+		    var arrAttender = result.data[0]['attender'].split(',');
+            var department = $('#department').val();
+            var attenderList = arrAttenderMap[department];
 
-		var arrAttender = result.data[0]['attender'].split(',');
-
-		var department = $('#department').val();
-   		var attenderList = arrAttenderMap[department];
-
-
-   		for(var i=0; i< attenderList.length-1; i++){
-			var tmpstr = $.inArray(attenderList[i], arrAttender);
-			if(tmpstr != -1){
-				$('#list'+i).attr("checked", true);
-			}else{
-				$('#list'+i).attr("checked", false);
-			}
-
-    		}   
-	
-	},
+            for(var i=0; i< attenderList.length-1; i++){
+                var tmpstr = $.inArray(attenderList[i], arrAttender);
+                if(tmpstr != -1){
+                    $('#list'+i).attr("checked", true);
+                }else{
+                    $('#list'+i).attr("checked", false);
+                }
+            }
+	    },
         error: function(e){
             console.log(e.status);
             console.log(e.responseText);
@@ -97,64 +144,15 @@ function initPageById(id){
     }); 
 }
 
-function initAttender(){
-    var department = $('#department').val();
-    var attenderList = arrAttenderMap[department];
-    var tmpHtml = '';
-    for(i=0; i< attenderList.length; i++){
-        tmpHtml += '<label class="weui-cell weui-check__label"><div class="weui-cell__hd"><input type="checkbox" class="weui-check" name="checkbox1" id=list' +
-        i + '>' +
-        '<i class="weui-icon-checked"></i></div>'+
-        '<div class="weui-cell__bd"><p>' + attenderList[i] +
-        '</p></div></label>';
-    }
 
-    $('#attender').html(tmpHtml);
-}
 
 $("#department").select({
 title: "选择部门",
-items: ["数字化创新部", "信息安全和云服务部", "IT治理部"],
+items: departments,
 onChange: function(d) {
-    initAttender();
+
 },
 });
-
-$("#customer").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#productdesign").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#teamwork").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#orgnization").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#management").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#operation").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#competence").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-
-
-function initDaily(){
-    var department = $("#department").val();
-    var dailylist = dailyreport[department];
-    var date = $('#date').val();
-    console.log(date);
-
-    var dailyhtml = '';
-    for(i=0; i<dailylist.length; i++){
-        var tmpStr = '<div class="weui-cells"><a class="weui-cell weui-cell_access" href="input.html?id=' +
-                        dailylist[i].id + '&department=' + department + '&date=' + date +
-                        '"><div class="weui-cell__bd weui-cell_primary"><p>' +
-                        dailylist[i].description +
-                        '</p></div><span class="weui-cell__ft"></span></a></div>';
-            dailyhtml = dailyhtml + tmpStr;
-    }
-
-        var tmpStr = '<div class="weui-cells"><a class="weui-cell weui-cell_access" href="input.html?'+
-                        'department=' + department + '&date=' + date +
-                        '"><div class="weui-cell__bd weui-cell_primary"><p>' +
-                        '点击新增记录' +
-                        '</p></div><span class="weui-cell__ft"></span></a></div>';
-        dailyhtml = dailyhtml + tmpStr;
-
-    $('#dailyList').html(dailyhtml);
-    $('#tomorrowDailyList').html(dailyhtml);
-}
 
 function getDailyByDate(){
     var date = $('#date').val();
@@ -219,16 +217,8 @@ function submitDaily(){
         'partner':  $('#partner').val(),
         'attender': attender,
         'tag': tag,
-        'customer': $('#customer').val(),
-        'productdesign' : $('#productdesign').val(),
-        'teamwork' : $('#teamwork').val(),
-        'orgnization' : $('#orgnization').val(),
-        'management': $('#management').val(),
-        'operation': $('#operation').val(),
-        'competence': $('#competence').val(),
-        'projectname': $('#projectsList').val(),
-	'action': 'insert',
-	'id': id,
+	    'action': 'insert',
+	    'id': id,
     };
 
        $.ajax({
@@ -239,7 +229,7 @@ function submitDaily(){
 		url:"http://127.0.0.0:8888/dailyreport/?action=insert",
    		success:function(result){
     			alert('提交成功');
-			window.location.href = "show.html?department="+department+"&date="+$('#date').val();
+			    window.location.href = "show.html?department="+department+"&date="+$('#date').val();
 		},
 		error: function(e){
 			console.log(e.status);

@@ -1,103 +1,21 @@
- var option = {
-    tooltip: {},
-    legend: {
-      // data: ['协同系统']
-    },
-    radar: {
-      // shape: 'circle',
-      name: {
-        textStyle: {
-          color: '#fff',
-          backgroundColor: '#999',
-          borderRadius: 3,
-          padding: [3, 5]
-        }
-      },
-      indicator: [
-        { name: '用户沟通', max: 5 },
-        { name: '产品设计', max: 5 },
-        { name: '架构协同', max: 5 },
-        { name: '团队组织', max: 5 },
-        { name: '项目管控', max: 5 },
-        { name: '价值运营', max: 5 },
-        { name: '核心能力', max: 5 }
-      ]
-    },
-    series: [{
-      // name: '协同系统',
-      type: 'radar',
-      // areaStyle: {normal: {}},
-      data: [
-        {
-          value: [2, 3, 3, 3, 3, 3, 3],
-          name: '项目1'
-        },
-        {
-          value: [3, 2, 1, 0, 0, 0, 0],
-          name: '项目2'
-        },
-        {
-          value: [2, 3, 3, 3, 3, 3, 3],
-          name: '项目3'
-        },
-        {
-          value: [1, 3, 0, 0, 0, 0, 0],
-          name: 'pro4'
-        },
-        {
-          value: [1, 3, 0, 0, 0, 0, 0],
-          name: 'pro5'
-        },
-        {
-          value: [1, 3, 0, 0, 0, 0, 0],
-          name: 'pro6'
-        },
-        {
-          value: [3, 3, 0, 0, 0, 0, 0],
-          name: 'pro7'
-        },
-        {
-          value: [4, 3, 0, 0, 0, 0, 0],
-          name: 'pro8'
-        },
-        {
-          value: [4, 3, 0, 0, 0, 0, 0],
-          name: 'pro9'
-        },
-        {
-          value: [4, 3, 0, 0, 0, 0, 0],
-          name: 'pro10'
-        },
-      ]
-    }]
-  };
+$(function() {
+    var department = getQueryString('department');
+    var dateFromGet = getQueryString('date');
 
-var myChart = echarts.init(document.getElementById('proEcharts'));
- myChart.setOption(option);
+    if(department){ $('#department').val(department);}
+    if(dateFromGet){
+        $('#date').val(dateFromGet);
+    }else{
+        initDate();
+    }
 
-   $(function() {
-        var department = getQueryString('department');
-        var dateFromGet = getQueryString('date');
-
-        if(department){ $('#department').val(department);}
-        if(dateFromGet){ 
-		$('#date').val(dateFromGet);
-	}else{
-        	initDate();
-	}
-        initDaily();
-	    var a = getDailyByDate($('#date').val());
-	    initVarDailylist(a);
-   });
+    initDaily();
+    var a = getDailyByDate($('#date').val());
+    initVarDailylist(a);
+});
 
 function initDate(){
-    var year = (new Date()).getFullYear();
-    var day = (new Date()).getDate();
-    var month = (new Date()).getMonth() + 1;
-    month = month < 10? '0'+month : month;
-    day = day < 10? '0' + day : day;
-    var today = year + '-' + month + '-' + day;
-
+    today = getToday();
     $('#date').val(today);
 }
 
@@ -126,27 +44,6 @@ var dailyreport = {
     'IT治理部': [{'id': 1, 'description': '我是I一'},{'id': 2, 'description': '我是I二'},{'id': 3, 'description': '我是I三'}]
     };
 
-
-/*获取get传参*/
-function getQueryString(name) {
-    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-    var r = window.location.search.substr(1).match(reg);
-    if (r != null) return decodeURI(r[2]); return null;
-}
-
-function getTomorrow(date){
-    var a = new Date(date);
-    n = 1;
-    var b = new Date(a -0+n* 86400000)
-    var year = b.getFullYear();
-    var day = b.getDate();
-    var month = b.getMonth() + 1;
-
-    month = month <10 ? '0' + month: month;
-    day = day < 10? '0' + day: day;
-
-    return year + '-' + month + '-' + day;
-}
 
 function initDaily(){
     var department = $("#department").val();

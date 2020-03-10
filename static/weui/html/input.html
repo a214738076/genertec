@@ -26,19 +26,14 @@
           <input class="weui-input" id="department" type="text" value="数字化创新部">
         </div>
       </div>
-                <div class="weui-cell weui-cell_switch">
-        <div class="weui-cell__bd">归属项目</div>
-        <div class="weui-cell__ft">
-          <input class="weui-switch" type="checkbox" id="isProject">
-        </div>
-      </div>
 
-        <div class="weui-cell" id="showProject">
-        <div class="weui-cell__hd"><label for="date" class="weui-label">项目名称</label></div>
-        <div class="weui-cell__bd">
-          <input class="weui-input" id="projectsList" type="text" value="项目一">
-        </div>
-      </div>
+<!--        <div class="weui-cell" id="showProject">-->
+<!--        <div class="weui-cell__hd"><label for="name" class="weui-label">项目名称</label></div>-->
+<!--        <div class="weui-cell__bd">-->
+<!--          <input class="weui-input" id="projectsList" type="text" value="其他">-->
+<!--        </div>-->
+<!--            <div class="weui-cell weui-cell_link"><div class="weui-cell__bd">添加更多</div>-->
+<!--      </div>-->
     </div>
 
     <div class="weui-cells__title">事项</div>
@@ -60,75 +55,60 @@
       </div>
     </div>
 
-   <div class="weui-cells__title">参与人</div>
-    <div class="weui-cells weui-cells_checkbox" id="attender">
+<!--   <div class="weui-cells__title">参与人</div>-->
+<!--    <div class="weui-cells weui-cells_checkbox" id="attender">-->
+<!--    </div>-->
+
+    <div class="weui-cells__title">项目</div>
+    <div class="weui-cells">
+        <div id="arrProject">
+            <div class="weui-cells weui-cells_form">
+              <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="" class="weui-label">类别</label></div>
+                <div class="weui-cell__bd">
+                  <input class="weui-input" id="domain" type="text" value="协同" >
+                </div>
+              </div>
+              <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="date" class="weui-label">项目</label></div>
+                <div class="weui-cell__bd">
+                  <input class="weui-input" id="project" type="text" value="数字化创新部">
+                </div>
+              </div>
+            </div>
+        </div>
+<!--    </div>-->
     </div>
+  <a href="javascript:addArrProjectHtml();"><div class="weui-cell weui-cell_link"><div class="weui-cell__bd">点击关联</div></div></a>
 
 
-<div id="projectData">
-    <div class="weui-cells__title">项目进度</div>
-        <div class="weui-cell">
-        <div class="weui-cell__hd"><label for="date" class="weui-label">客户沟通</label></div>
-        <div class="weui-cell__bd">
-          <input class="weui-input" id="customer" type="text" value="1">
-        </div>
-      </div>
+          <div class="weui-cell weui-cell_swiped">
+            <div class="weui-cell__bd">
+              <div class="weui-cell">
+                <div class="weui-cell__bd">
+                  <p>左滑列表哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+                </div>
+                <div class="weui-cell__ft">向左滑动试试</div>
+              </div>
+            </div>
+            <div class="weui-cell__ft">
+              <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout" href="javascript:">删除</a>
+            </div>
+          </div>
 
-        <div class="weui-cell">
-        <div class="weui-cell__hd"><label for="date" class="weui-label">产品设计</label></div>
-        <div class="weui-cell__bd">
-          <input class="weui-input" id="productdesign" type="text" value="1">
-        </div>
-      </div>
-
-    <div class="weui-cell">
-        <div class="weui-cell__hd"><label for="date" class="weui-label">架构协同</label></div>
-        <div class="weui-cell__bd">
-          <input class="weui-input" id="teamwork" type="text" value="1">
-        </div>
-      </div>
-
-        <div class="weui-cell">
-        <div class="weui-cell__hd"><label for="date" class="weui-label">团队组织</label></div>
-        <div class="weui-cell__bd">
-          <input class="weui-input" id="orgnization" type="text" value="1">
-        </div>
-      </div>
-
-
-        <div class="weui-cell">
-        <div class="weui-cell__hd"><label for="date" class="weui-label">项目管控</label></div>
-        <div class="weui-cell__bd">
-          <input class="weui-input" id="management" type="text" value="1">
-        </div>
-      </div>
-
-    <div class="weui-cell">
-        <div class="weui-cell__hd"><label for="date" class="weui-label">价值运营</label></div>
-        <div class="weui-cell__bd">
-          <input class="weui-input" id="operation" type="text" value="1">
-        </div>
-      </div>
-
-        <div class="weui-cell">
-        <div class="weui-cell__hd"><label for="date" class="weui-label">能力锻造</label></div>
-        <div class="weui-cell__bd">
-          <input class="weui-input" id="competence" type="text" value="1">
-        </div>
-      </div>
-</div>
 
     <div class="weui-btn-area">
       <a class="weui-btn weui-btn_primary" href="javascript:submitDaily()" id="showTooltips">确定</a>
     </div>
 </body>
 
-
     <script src="../lib/jquery-2.1.4.js"></script>
     <script src="../lib/fastclick.js"></script>
 
     <script src="../js/jquery-weui.js"></script>
     <script src="../js/echarts.js"></script>
+    <script src="../data/data.js"></script>
+    <script src="../js/lib.js"></script>
     <script src="../js/input.js"></script>
 
 </body>
