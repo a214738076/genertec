@@ -28,7 +28,6 @@ def interfaceBigScreen(request):
 # Create your views here.
 def index(request):
     module = request.POST.get('module')
-
     if module == 'project':
         data = exeProject(request)
     else:
@@ -46,8 +45,6 @@ def exeDailyReport(request):
 
     msg = 'success'
     data = ''
-
-    
     if action == 'get':
         data = getDailyrecord(request)
     elif action == 'insert':

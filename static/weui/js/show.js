@@ -27,7 +27,6 @@ $("#department").select({
 title: "选择部门",
 items: ["数字化创新部", "信息安全和云服务部", "IT治理部"],
 onChange: function(d) {
-  console.log(this, d);
   initDaily();
 },
 onClose: function() {
@@ -54,9 +53,6 @@ function initDaily(){
     var dailyreport = initVarDailylist(arrTmp);
     var dailylist = dailyreport[department];
     var dailyhtml = '';
-    console.log(dailyreport);
-    console.log(dailylist);
-
 
     for(i=0; i<dailylist.length; i++){
 	  var tag = '';
@@ -67,7 +63,7 @@ function initDaily(){
                         dailylist[i].id + '&department=' + department + '&date=' + date +
                         '"><div class="weui-cell__bd weui-cell_primary"><p>' +
                         dailylist[i].description +
-                        '</p></div><span class="weui-cell__ft">' + tag + '</span></a></div>';
+                        '</p></div><span class="weui-cell__ft"></span></a></div>';
             dailyhtml = dailyhtml + tmpStr;
     }
 
@@ -100,7 +96,7 @@ function getDailyByDate(date){
             type: "post",
             datatype: "json",
             async: false,
-            url:"http://127.0.0.1:8888/dailyreport/?action=get&date="+date,
+            url: urlPre + "/dailyreport/?action=get&date="+date,
             contentType: "application/json;charset=UTF-8",
             success:function(result){
                     dailyLists = result.data;
@@ -128,7 +124,7 @@ function getAllProjects(){
    		type: "post",
    		datatype: "json",
    		async: false,
-		url:"http://127.0.0.1:8888/dailyreport/project?action=get&type=detail&department='数字化创新部'",
+		url: urlPre + "/dailyreport/project?action=get&type=detail&department='数字化创新部'",
    		contentType: "application/x-www-form-urlencoded;charset=UTF-8",
    		success:function(result){
     			console.log('success')

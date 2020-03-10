@@ -1,3 +1,5 @@
+var urlPre = "http://127.0.0.1:8888";
+
 /*获取get传参*/
 function getQueryString(name) {
     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");

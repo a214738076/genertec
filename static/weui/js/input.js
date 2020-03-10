@@ -1,14 +1,10 @@
-//var dataJson = require('../data/project.json'); //with path
-//import * from '../data/project.json'
-
 var id=0;
 var arrProject = [];
 
 $(function() {
-//    init();
     initDomain($('#department').val());
     initProject();
-//    initArrProjectHtml($('#department').val());
+    init();
 });
 
 function init(){
@@ -25,32 +21,6 @@ function init(){
 	    id=0;
     }
 }
-
-
-function initArrProjectHtml(department){
-    var domainHtml = initDomain(department);
-    var tmpPre =  '<div class="weui-cell weui-cell_swiped">' +
-                  '<div class="weui-cell weui-cell_select weui-cell_select-before">' +
-                  '<div class="weui-cell__hd">' +
-                  '<select class="weui-select" style="width:145px" id="domain';
-    var tmpMid = '" onchange="initProject()">' + domainHtml + '</select></div>' +
-                     '<div class="weui-cell"><div class="weui-cell__bd">' +
-                     '<input class="weui-input" type="text" placeholder="选择项目" id="projectsList';
-    var tmpEnd = '"></div></div></div></div>' +
-                '<div class="weui-cell__ft">' +
-                '<a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout" href="javascript:">删除</a></div>' +
-                '</div>';
-
-    var html = '';
-
-    for(var i=0; i<arrProject.length; i++){
-        html += tmpPre + arrProject[i] +  tmpMid + arrProject[i] + tmpEnd;
-    }
-
-    console.log(html);
-    $('#arrProject').html(html);
-}
-
 
 function addArrProjectList(){
     var department = $('#department').val();
@@ -114,25 +84,23 @@ function initPageById(id){
         type: "post",
         datatype: "json",
         async: false,
-        url:"http://127.0.0.0:8888/dailyreport/?action=get&id="+ id,
+        url: urlPre + "/dailyreport/?action=get&id="+ id,
         contentType: "application/x-www-form-urlencoded;charset=UTF-8",
         success:function(result){
             $('#description').val(result.data[0]['description']);
             $('#partner').val(result.data[0]['partner']);
 		    var tmpProject = result.data[0]['project'].split(',');
-		    if(tmpProject.length=1){
+
+		    if(tmpProject.length == 1){
 		        var arrTmp = tmpProject[0].split('-');
-		        var strTmp = '#domain option:contains(' + arrTmp[0] + ')';
-		        $(strTmp).attr("selected", true);
-		        strTmp = '#project option:contains(' + arrTmp[0] + ')';
-		        $(strTmp).attr("selected", true);
+                setSelected('domain', arrTmp[0]);
+                initProject();
+                setSelected('project', arrTmp[1]);
+
 		    }else{
 		        arrProject = tmpProject;
 		        initArrProjectList();
 		    }
-//            var department = $('#department').val();
-
-//            $("#domain option:contains('天津市')").attr("selected", true);
 	    },
         error: function(e){
             console.log(e.status);
@@ -141,33 +109,27 @@ function initPageById(id){
     }); 
 }
 
+function setSelected(id, value){
+    $("#" + id + ' option[value="' + value + '"]').attr("selected", "selected");
+}
+
 
 
 $("#department").select({
 title: "选择部门",
 items: departments,
 onChange: function(d) {
-
+    initDomain($('#department').val());
+    initProject();
+    arrProject = [];
+    initArrProjectList();
 },
 });
 
-function getDailyByDate(){
-    var date = $('#date').val();
-      $.ajax({
-            type: "post",
-            datatype: "json",
-            async: false,
-            url:"http://127.0.0.1/dailyreport?action=get&date="+date,
-            contentType: "application/x-www-form-urlencoded;charset=UTF-8",
-            success:function(result){
-                    console.log('success')
-                    projects = result.data;
-            },
-            error: function(e){
-                console.log(e.status);
-                console.log(e.responseText);
-            }
-        });
+function dateChange(){
+    initDomain($('#department').val());
+    initProject();
+    init();
 }
 
 function getAllProjects(){
@@ -176,7 +138,7 @@ function getAllProjects(){
    		type: "post",
    		datatype: "json",
    		async: false,
-		url:"http://127.0.0.1/dailyreport/project?action=get&type=detail&department='数字化创新部'",
+		url: urlPre + "/dailyreport/project?action=get&type=detail&department='数字化创新部'",
    		contentType: "application/x-www-form-urlencoded;charset=UTF-8",
    		success:function(result){
     			console.log('success')
@@ -212,6 +174,7 @@ function submitDaily(){
         'department': $('#department').val(),
         'description': $('#description').val(),
         'partner':  $('#partner').val(),
+        'project': project,
 	    'action': 'insert',
 	    'id': id,
     };
@@ -221,7 +184,7 @@ function submitDaily(){
    		datatype: "json",
    		async: false,
    		data: data,
-		url:"http://127.0.0.0:8888/dailyreport/?action=insert",
+		url: urlPre + "/dailyreport/?action=insert",
    		success:function(result){
     			alert('提交成功');
 			    window.location.href = "show.html?department="+department+"&date="+$('#date').val();
