@@ -2,11 +2,12 @@
 //import * from '../data/project.json'
 
 var id=0;
-var arrProject = [0];
+var arrProject = [];
 
 $(function() {
 //    init();
-//    initDomain($('#department').val());
+    initDomain($('#department').val());
+    initProject();
 //    initArrProjectHtml($('#department').val());
 });
 
@@ -32,7 +33,7 @@ function initArrProjectHtml(department){
                   '<div class="weui-cell weui-cell_select weui-cell_select-before">' +
                   '<div class="weui-cell__hd">' +
                   '<select class="weui-select" style="width:145px" id="domain';
-    var tmpMid = '" onchange="initProjectList()">' + domainHtml + '</select></div>' +
+    var tmpMid = '" onchange="initProject()">' + domainHtml + '</select></div>' +
                      '<div class="weui-cell"><div class="weui-cell__bd">' +
                      '<input class="weui-input" type="text" placeholder="选择项目" id="projectsList';
     var tmpEnd = '"></div></div></div></div>' +
@@ -51,26 +52,33 @@ function initArrProjectHtml(department){
 }
 
 
-function addArrProjectHtml(){
+function addArrProjectList(){
     var department = $('#department').val();
-    var domainHtml = initDomain(department);
-    var tmpPre = '<div class="weui-cell weui-cell_select weui-cell_select-before">' +
-                 '<div class="weui-cell__hd">' +
-                 '<select class="weui-select" style="width:145px" id="domain';
-    var tmpMid = '" onchange="initProjectList()">' + domainHtml + '</select></div>' +
-                     '<div class="weui-cell"><div class="weui-cell__bd">' +
-                     '<input class="weui-input" type="text" placeholder="选择项目" id="projectsList';
-    var tmpEnd = '"></div></div></div></div>';
-    var html =  $('#arrProject').html();
+    var projectname = $('#domain').val() + '-' + $('#project').val();
 
-    i = arrProject.length;
-    html += tmpPre + i +  tmpMid + i + tmpEnd;
-    $('#arrProject').html(html);
-
-    arrProject.push(i);
+    arrProject.push(projectname);
+    initArrProjectList();
     console.log(arrProject);
 }
 
+function initArrProjectList(){
+    var htmlPre = '<div class="weui-cell weui-cell_swiped"><div class="weui-cell__bd"><div class="weui-cell"><div class="weui-cell__bd"><p>';
+    var htmlMiddle = '</p></div> <a class="weui-btn weui-btn_mini weui-btn_default" href="javascript:deleteArrProjectList(';
+    var htmlEnd = ')">删除</a></div> </div></div>';
+
+    var tmpHtml = '';
+    for(var i=0; i<arrProject.length; i++){
+        tmpHtml += htmlPre + arrProject[i] + htmlMiddle + i + htmlEnd;
+    }
+
+    $('#projectList').html(tmpHtml);
+}
+
+function deleteArrProjectList(index){
+  console.log("delete " + index);
+  arrProject.splice(index, 1);
+  initArrProjectList();
+}
 
 function initDomain(department){
     var tmpHtml = '';
@@ -78,40 +86,27 @@ function initDomain(department){
     for(var p in tmpDomain){
         tmpHtml += '<option value='+p+'>' + p  + '</option>';
     }
-    return tmpHtml;
-//    console.log(tmpHtml);
-//    $('#domain').html(tmpHtml);
-//    initProjectList();
+
+    $('#domain').html(tmpHtml);
 }
 
 function addProject(){
     console.log('test');
 }
 
-function initProjectList(){
+function initProject(){
     var department = $('#department').val();
     var domain = $('#domain').val();
-
-//   console.log(itemsPro);
-
     var itemsPro = [];
+
+    var tmpHtml = '';
 
     for(var i=0; i< projects[department][domain].length; i++){
         var tmp = {'title' : projects[department][domain][i], 'value': projects[department][domain][i]};
-        itemsPro.push(tmp);
+        tmpHtml += '<option value=' + projects[department][domain][i] +'>' + projects[department][domain][i] + '</option>';
     }
 
-       $("#projectsList").select({
-        title: "项目名称",
-        multi: true,
-//        min: 1,
-        items: itemsPro,
-        onClose: function (d) {
-            console.log('close');
-        }
-      });
-
-      console.log(itemsPro);
+    $('#project').html(tmpHtml);
 }
 
 function initPageById(id){
@@ -124,18 +119,20 @@ function initPageById(id){
         success:function(result){
             $('#description').val(result.data[0]['description']);
             $('#partner').val(result.data[0]['partner']);
-		    var arrAttender = result.data[0]['attender'].split(',');
-            var department = $('#department').val();
-            var attenderList = arrAttenderMap[department];
+		    var tmpProject = result.data[0]['project'].split(',');
+		    if(tmpProject.length=1){
+		        var arrTmp = tmpProject[0].split('-');
+		        var strTmp = '#domain option:contains(' + arrTmp[0] + ')';
+		        $(strTmp).attr("selected", true);
+		        strTmp = '#project option:contains(' + arrTmp[0] + ')';
+		        $(strTmp).attr("selected", true);
+		    }else{
+		        arrProject = tmpProject;
+		        initArrProjectList();
+		    }
+//            var department = $('#department').val();
 
-            for(var i=0; i< attenderList.length-1; i++){
-                var tmpstr = $.inArray(attenderList[i], arrAttender);
-                if(tmpstr != -1){
-                    $('#list'+i).attr("checked", true);
-                }else{
-                    $('#list'+i).attr("checked", false);
-                }
-            }
+//            $("#domain option:contains('天津市')").attr("selected", true);
 	    },
         error: function(e){
             console.log(e.status);
@@ -196,27 +193,25 @@ function getAllProjects(){
 
 
 function submitDaily(){
-    var attender = '';
     var department = $('#department').val();
-    var attenderList = arrAttenderMap[department];
-    for(i=0; i< attenderList.length; i++){
-        if($("#list" + i ).is(":checked")){
-            attender += attenderList[i] + ",";
-        }
+    if( $('#description').val() == ''){
+	    alert("事项描述不能为空");
+	    return;
     }
-    var tag = $('#isProject').is(":checked")? 'project' : 'daily';
-    if(attender == '' || $('#description').val() == ''){
-	alert("事项描述和参与人不能为空");
-	return;
+
+    var project = '';
+    if(arrProject.length == 0){
+        project = $('#domain').val() + '-' + $('#project').val();
+    }else{
+        project = arrProject.toString();
     }
+    console.log(project);
 
        var data = {
         'date': $('#date').val(),
         'department': $('#department').val(),
         'description': $('#description').val(),
         'partner':  $('#partner').val(),
-        'attender': attender,
-        'tag': tag,
 	    'action': 'insert',
 	    'id': id,
     };

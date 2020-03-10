@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../css/jquery-weui.css">
     <link rel="stylesheet" href="../css/demos.css">
 </head>
-<body>
+
+<body ontouchstart>
 
 <div class="weui-cells__title">筛选条件</div>
     <div class="weui-cells weui-cells_form">
@@ -55,47 +56,39 @@
       </div>
     </div>
 
-<!--   <div class="weui-cells__title">参与人</div>-->
-<!--    <div class="weui-cells weui-cells_checkbox" id="attender">-->
-<!--    </div>-->
-
     <div class="weui-cells__title">项目</div>
-    <div class="weui-cells">
-        <div id="arrProject">
-            <div class="weui-cells weui-cells_form">
-              <div class="weui-cell">
-                <div class="weui-cell__hd"><label for="" class="weui-label">类别</label></div>
-                <div class="weui-cell__bd">
-                  <input class="weui-input" id="domain" type="text" value="协同" >
-                </div>
-              </div>
-              <div class="weui-cell">
-                <div class="weui-cell__hd"><label for="date" class="weui-label">项目</label></div>
-                <div class="weui-cell__bd">
-                  <input class="weui-input" id="project" type="text" value="数字化创新部">
-                </div>
-              </div>
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell weui-cell_select weui-cell_select-after">
+            <div class="weui-cell__hd">
+              <label for="" class="weui-label">领域</label>
+            </div>
+            <div class="weui-cell__bd">
+              <select class="weui-select" name="select2" id="domain" onchange="initProject()">
+                <option value="1">协同办公类</option>
+              </select>
             </div>
         </div>
-<!--    </div>-->
+
+        <div class="weui-cell weui-cell_select weui-cell_select-after">
+        <div class="weui-cell__hd">
+          <label for="" class="weui-label">任务</label>
+        </div>
+        <div class="weui-cell__bd">
+          <select class="weui-select" name="select2" id="project">
+            <option value="1">协同办公类</option>
+          </select>
+        </div>
+        </div>
+
+    <a href="javascript:addArrProjectList();">
+        <div class="weui-cell weui-cell_link">
+            <div class="weui-cell__bd">添加多项目关联</div>
+        </div>
+    </a>
+
+        <div id="projectList">
+        </div>
     </div>
-  <a href="javascript:addArrProjectHtml();"><div class="weui-cell weui-cell_link"><div class="weui-cell__bd">点击关联</div></div></a>
-
-
-          <div class="weui-cell weui-cell_swiped">
-            <div class="weui-cell__bd">
-              <div class="weui-cell">
-                <div class="weui-cell__bd">
-                  <p>左滑列表哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-                </div>
-                <div class="weui-cell__ft">向左滑动试试</div>
-              </div>
-            </div>
-            <div class="weui-cell__ft">
-              <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout" href="javascript:">删除</a>
-            </div>
-          </div>
-
 
     <div class="weui-btn-area">
       <a class="weui-btn weui-btn_primary" href="javascript:submitDaily()" id="showTooltips">确定</a>
@@ -111,5 +104,5 @@
     <script src="../js/lib.js"></script>
     <script src="../js/input.js"></script>
 
-</body>
+
 </html>
