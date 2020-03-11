@@ -127,8 +127,10 @@ function initTarget(){
     var department = $('#department').val();
     var domain = $('#domain').val();
     var project = $('#project').val();
+    console.log(project);
 
-    console.log(projectDetails[department][domain][project]['target']);
+    console.log(projectDetails[department][domain][project]);
+//    console.log(projectDetails[department][domain][project]['target']);
 }
 
 var myChart = echarts.init(document.getElementById('proEcharts'));
