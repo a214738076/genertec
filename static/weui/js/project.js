@@ -72,8 +72,67 @@
     }]
   };
 
+
+$("#department").select({
+    title: "选择部门",
+    items: departments,
+    onChange: function(d) {
+       init();
+    },
+});
+
+function init(){
+
+    initDomain();
+    initProject();
+    initTarget();
+}
+
+function initDate(){
+    var today = getToday();
+    $('#dateEnd').val(today);
+
+    var dateStart = getLastMonthDay(today);
+    $('#dateStart').val(dateStart);
+}
+
+function initDomain(){
+    var department = $('#department').val();
+    var tmpHtml = '';
+    var tmpDomain = projects[department];
+    for(var p in tmpDomain){
+        tmpHtml += '<option value='+p+'>' + p  + '</option>';
+    }
+
+    $('#domain').html(tmpHtml);
+}
+
+function initProject(){
+    var department = $('#department').val();
+    var domain = $('#domain').val();
+    var itemsPro = [];
+
+    var tmpHtml = '';
+
+    for(var i=0; i< projects[department][domain].length; i++){
+        var tmp = {'title' : projects[department][domain][i], 'value': projects[department][domain][i]};
+        tmpHtml += '<option value=' + projects[department][domain][i] +'>' + projects[department][domain][i] + '</option>';
+    }
+
+    $('#project').html(tmpHtml);
+}
+
+
+function initTarget(){
+    var department = $('#department').val();
+    var domain = $('#domain').val();
+    var project = $('#project').val();
+
+    console.log(projectDetails[department][domain][project]['target']);
+}
+
 var myChart = echarts.init(document.getElementById('proEcharts'));
- myChart.setOption(option);
+myChart.setOption(option);
 
    $(function() {
         var department = getQueryString('department');
@@ -83,20 +142,18 @@ var myChart = echarts.init(document.getElementById('proEcharts'));
         if(dateFromGet){
 		$('#date').val(dateFromGet);
 	}else{
-        initDate();
+	    initDate();
+        init();
 	}
-        initDaily();
-	    var a = getDailyByDate($('#date').val());
-	    initVarDailylist(a);
    });
-
-$("#customer").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#productdesign").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#teamwork").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#orgnization").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#management").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#operation").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-$("#competence").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
-
+//
+//$("#customer").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
+//$("#productdesign").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
+//$("#teamwork").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
+//$("#orgnization").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
+//$("#management").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
+//$("#operation").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
+//$("#competence").select({title: "选择进度", items: ["1", "2", "3", "4", "5"],});
+//
 
 

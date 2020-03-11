@@ -22,7 +22,36 @@ function getToday(){
 function getTomorrow(date){
     var a = new Date(date);
     n = 1;
-    var b = new Date(a -0+n* 86400000)
+    var b = new Date(a - 0+n* 86400000)
+    var year = b.getFullYear();
+    var day = b.getDate();
+    var month = b.getMonth() + 1;
+
+    month = month <10 ? '0' + month: month;
+    day = day < 10? '0' + day: day;
+
+    return year + '-' + month + '-' + day;
+}
+
+//返回1个星期前日期
+function getLastWeekDay(date){
+    var nowdate = new Date(date);
+    var b = new Date(nowdate - 7*24*3600*1000)
+    var year = b.getFullYear();
+    var day = b.getDate();
+    var month = b.getMonth() + 1;
+
+    month = month <10 ? '0' + month: month;
+    day = day < 10? '0' + day: day;
+
+    return year + '-' + month + '-' + day;
+}
+
+//返回1个月前日期
+function getLastMonthDay(date){
+    var b= new Date(date);
+    b.setMonth(b.getMonth() -1);
+
     var year = b.getFullYear();
     var day = b.getDate();
     var month = b.getMonth() + 1;

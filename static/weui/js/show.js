@@ -37,12 +37,6 @@ onOpen: function() {
 },
 });
 
-var dailyreport = {
-    '数字化创新部': [{'id': 1, 'description': '我是数字化项目一'},{'id': 2, 'description': '我是数字化项目二'},{'id': 3, 'description': '我是数字项目三'}],
-    '云安全服务部': [{'id': 1, 'description': '我是云一'},{'id': 2, 'description': '我是云二'}],
-    'IT治理部': [{'id': 1, 'description': '我是I一'},{'id': 2, 'description': '我是I二'},{'id': 3, 'description': '我是I三'}]
-    };
-
 
 function initDaily(){
     var department = $("#department").val();

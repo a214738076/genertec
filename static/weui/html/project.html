@@ -12,19 +12,72 @@
 </head>
 <body>
 
-<div class="weui-cells__title">项目雷达</div>
-    <div class="weui-cells_bd">
-        <div class="box" id="proEcharts"></div>
-    </div>
+<div class="weui-cells__title">筛选条件</div>
+    <div class="weui-cells weui-cells_form">
+      <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="" class="weui-label">开始日期</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="dateStart" type="date" value="2020-02-29" onchange="dateChange()" />
+        </div>
+      </div>
+        <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="" class="weui-label">结束日期</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="dateEnd" type="date" value="2020-02-29" onchange="dateChange()" />
+        </div>
+      </div>
 
-<!--    <div class="weui-cells__tips">底部说明文字底部说明文字</div>-->
+      <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="date" class="weui-label">查询部门</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="department" type="text" value="数字化创新部">
+        </div>
+      </div>
 
+           <div class="weui-cell weui-cell_select weui-cell_select-after">
+            <div class="weui-cell__hd">
+              <label for="" class="weui-label">所在领域</label>
+            </div>
+            <div class="weui-cell__bd">
+              <select class="weui-select" name="select2" id="domain" onchange="initProject()">
+                <option value="1">协同办公类</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="weui-cell weui-cell_select weui-cell_select-after">
+        <div class="weui-cell__hd">
+          <label for="" class="weui-label">具体项目</label>
+        </div>
+        <div class="weui-cell__bd">
+          <select class="weui-select" name="select2" id="project">
+            <option value="1">协同办公类</option>
+          </select>
+        </div>
+        </div>
+
+        <div class="weui-cells__title">项目记录</div>
+    <div class="weui-media-box weui-media-box_small-appmsg" id="dailyList"></div>
+
+        <div class="weui-cells__title">项目目标</div>
+    <div class="weui-media-box weui-media-box_small-appmsg" id="target"></div>
+
+
+    <div class="weui-cells__title">项目雷达</div>
+        <div class="weui-cells_bd">
+            <div class="box" id="proEcharts"></div>
+        </div>
+
+
+
+</body>
     <script src="../lib/jquery-2.1.4.js"></script>
     <script src="../lib/fastclick.js"></script>
-
+    <script src="../data/data.js"></script>
     <script src="../js/jquery-weui.js"></script>
     <script src="../js/echarts.js"></script>
-<!--    <script src="../js/show.js"></script>-->
+    <script src="../js/lib.js"></script>
+    <script src="../js/project.js"></script>
 
 </body>
 </html>
