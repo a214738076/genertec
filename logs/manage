@@ -1,65 +1,572 @@
-[10/Mar/2020 13:21:09] "GET /static/weui/html/input.html HTTP/1.1" 304 0
-[10/Mar/2020 13:21:09] "GET /static/weui/data/data.js HTTP/1.1" 304 0
-[10/Mar/2020 13:21:09] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:21:32] "GET /static/weui/html/show.html HTTP/1.1" 200 1976
-[10/Mar/2020 13:21:32] "GET /static/weui/js/show.js HTTP/1.1" 200 4839
-[10/Mar/2020 13:21:32] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 27
-Not Found: /bigscreen
-[10/Mar/2020 13:21:49] "GET /bigscreen HTTP/1.1" 404 2432
-[10/Mar/2020 13:22:00] "GET /bigscreen/ HTTP/1.1" 200 13025
-[10/Mar/2020 13:22:00] "GET /static/css/admin.css HTTP/1.1" 200 5683
-[10/Mar/2020 13:22:00] "GET /static/css/app.css HTTP/1.1" 200 38950
-[10/Mar/2020 13:22:00] "GET /static/js/getdata.js HTTP/1.1" 200 3180
-[10/Mar/2020 13:22:00] "GET /static/js/jquery.min.js HTTP/1.1" 200 88145
-[10/Mar/2020 13:22:00] "GET /static/js/app.js HTTP/1.1" 200 13181
-[10/Mar/2020 13:22:00] "GET /static/js/iscroll.js HTTP/1.1" 200 55732
-[10/Mar/2020 13:22:00] "GET /static/css/amazeui.min.css HTTP/1.1" 200 255214
-[10/Mar/2020 13:22:00] "GET /static/css/style.css HTTP/1.1" 200 2228
-[10/Mar/2020 13:22:00] "GET /static/img/title.png HTTP/1.1" 200 80704
-[10/Mar/2020 13:22:00] "GET /static/js/amazeui.min.js HTTP/1.1" 200 210974
-[10/Mar/2020 13:22:00] "GET /static/js/echarts.min.js HTTP/1.1" 200 540160
-[10/Mar/2020 13:22:01] "GET /static/img/screen_bg.jpg HTTP/1.1" 200 320168
-[10/Mar/2020 13:22:01] "GET /static/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 404 1725
-[10/Mar/2020 13:22:01] "GET /static/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 404 1722
-[10/Mar/2020 13:22:01] "GET /static/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 404 1719
-Not Found: /bigscreen/assets/i/favicon.png
-[10/Mar/2020 13:22:01] "GET /bigscreen/assets/i/favicon.png HTTP/1.1" 404 2495
-Not Found: /dailyrecord/
-[10/Mar/2020 13:22:19] "GET /dailyrecord/ HTTP/1.1" 404 2441
-----------------------------------------
-Exception happened during processing of request from ('127.0.0.1', 64926)
+[12/Mar/2020 08:23:17] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
+[12/Mar/2020 08:23:17] "GET /static/weui/js/show.js HTTP/1.1" 304 0
+[12/Mar/2020 08:23:17] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 23
+[12/Mar/2020 08:23:17] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 08:23:17] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 23
+Not Found: /favicon.ico
+[12/Mar/2020 08:23:17] "GET /favicon.ico HTTP/1.1" 404 2438
+[12/Mar/2020 08:23:43] "GET /static/weui/html/show.html HTTP/1.1" 304 0
+[12/Mar/2020 08:23:43] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 23
+[12/Mar/2020 08:23:43] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 08:23:43] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 23
+[12/Mar/2020 08:23:49] "GET /static/weui/html/input.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-12 HTTP/1.1" 200 3998
+[12/Mar/2020 08:23:49] "GET /static/weui/js/input.js HTTP/1.1" 200 5192
+[12/Mar/2020 08:23:49] "GET /static/weui/data/data.js HTTP/1.1" 304 0
+[12/Mar/2020 08:24:04] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
+[12/Mar/2020 08:24:05] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-12 HTTP/1.1" 200 1976
+[12/Mar/2020 08:24:05] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 355
+[12/Mar/2020 08:24:05] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 08:24:05] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 355
+[12/Mar/2020 08:24:26] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
+[12/Mar/2020 08:24:27] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 689
+[12/Mar/2020 08:24:27] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 08:24:27] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 689
+[12/Mar/2020 08:25:09] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
+[12/Mar/2020 08:25:11] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 1018
+[12/Mar/2020 08:25:11] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 08:25:11] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 1018
+[12/Mar/2020 08:25:25] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
+[12/Mar/2020 08:25:26] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 1282
+[12/Mar/2020 08:25:26] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 08:25:26] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 1282
+[12/Mar/2020 08:25:55] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
+[12/Mar/2020 08:25:57] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 1605
+[12/Mar/2020 08:25:57] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 08:25:57] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 1605
+[12/Mar/2020 08:26:19] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
+[12/Mar/2020 08:26:21] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 1904
+[12/Mar/2020 08:26:21] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 08:26:21] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 1904
+[12/Mar/2020 08:26:39] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
+[12/Mar/2020 08:26:40] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2299
+[12/Mar/2020 08:26:40] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 08:26:40] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2299
+[12/Mar/2020 08:27:09] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
+[12/Mar/2020 08:27:10] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 08:27:10] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 08:27:10] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 08:27:17] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
+[12/Mar/2020 08:27:17] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 08:27:20] "GET /static/weui/html/input.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-11 HTTP/1.1" 200 3998
+[12/Mar/2020 08:38:40] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
+[12/Mar/2020 08:38:41] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-11 HTTP/1.1" 200 1976
+[12/Mar/2020 08:38:41] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 335
+[12/Mar/2020 08:38:41] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 08:38:41] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 335
+[12/Mar/2020 08:38:52] "GET /static/weui/html/input.html?id=8&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-12 HTTP/1.1" 200 3998
+[12/Mar/2020 08:38:52] "POST /dailyreport/?action=get&id=8 HTTP/1.1" 200 355
+[12/Mar/2020 08:38:57] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 335
+[12/Mar/2020 08:38:57] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 08:38:57] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 335
+[12/Mar/2020 08:39:12] "GET /static/weui/html/project.html HTTP/1.1" 200 4412
+[12/Mar/2020 08:39:12] "GET /static/weui/js/project.js HTTP/1.1" 200 6906
+[12/Mar/2020 08:39:12] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 08:39:17] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 08:39:18] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 08:39:22] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:23:11
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Exception ignored in thread started by: <function check_errors.<locals>.wrapper at 0x00000207D54B30D0>
 Traceback (most recent call last):
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\socketserver.py", line 650, in process_request_thread
-    self.finish_request(request, client_address)
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\socketserver.py", line 360, in finish_request
-    self.RequestHandlerClass(request, client_address, self)
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\socketserver.py", line 720, in __init__
-    self.handle()
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py", line 171, in handle
-    self.handle_one_request()
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py", line 179, in handle_one_request
-    self.raw_requestline = self.rfile.readline(65537)
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\socket.py", line 669, in readinto
-    return self._sock.recv_into(b)
-ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
-----------------------------------------
-[10/Mar/2020 13:22:51] "GET /dailyreport/ HTTP/1.1" 200 27
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 376, in check
+    all_issues = self._run_checks(
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 396, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\genertec\urls.py", line 18, in <module>
+    from dailyReport import views
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 5, in <module>
+    from dailyReport.dailyrecord import *
+IndentationError: expected an indented block (dailyrecord.py, line 43)
+Performing system checks...
+
+Exception ignored in thread started by: <function check_errors.<locals>.wrapper at 0x0000020C510230D0>
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 376, in check
+    all_issues = self._run_checks(
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 396, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\genertec\urls.py", line 18, in <module>
+    from dailyReport import views
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 5, in <module>
+    from dailyReport.dailyrecord import *
+IndentationError: expected an indented block (dailyrecord.py, line 43)
+Performing system checks...
+
+Exception ignored in thread started by: <function check_errors.<locals>.wrapper at 0x0000021251B430D0>
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 376, in check
+    all_issues = self._run_checks(
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 396, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\genertec\urls.py", line 18, in <module>
+    from dailyReport import views
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 5, in <module>
+    from dailyReport.dailyrecord import *
+IndentationError: expected an indented block (dailyrecord.py, line 43)
+Performing system checks...
+
+Exception ignored in thread started by: <function check_errors.<locals>.wrapper at 0x0000018D5AE030D0>
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 376, in check
+    all_issues = self._run_checks(
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 396, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\genertec\urls.py", line 18, in <module>
+    from dailyReport import views
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 5, in <module>
+    from dailyReport.dailyrecord import *
+IndentationError: expected an indented block (dailyrecord.py, line 43)
+Performing system checks...
+
+Exception ignored in thread started by: <function check_errors.<locals>.wrapper at 0x00000272BD2C30D0>
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 376, in check
+    all_issues = self._run_checks(
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 396, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\genertec\urls.py", line 18, in <module>
+    from dailyReport import views
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 5, in <module>
+    from dailyReport.dailyrecord import *
+IndentationError: expected an indented block (dailyrecord.py, line 43)
+Performing system checks...
+
 Performing system checks...
 
 System check identified no issues (0 silenced).
-March 10, 2020 - 13:20:49
+March 12, 2020 - 08:43:52
 Django version 2.1.7, using settings 'genertec.settings'
 Starting development server at http://0.0.0.0:8888/
 Quit the server with CTRL-BREAK.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-March 10, 2020 - 13:23:08
+March 12, 2020 - 08:44:13
 Django version 2.1.7, using settings 'genertec.settings'
 Starting development server at http://0.0.0.0:8888/
 Quit the server with CTRL-BREAK.
-Not Found: /dailyreport/？action=insert
-[10/Mar/2020 13:24:24] "GET /dailyreport/%EF%BC%9Faction=insert HTTP/1.1" 404 2497
+Exception ignored in thread started by: <function check_errors.<locals>.wrapper at 0x000001C82DAE30D0>
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 376, in check
+    all_issues = self._run_checks(
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 396, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\genertec\urls.py", line 18, in <module>
+    from dailyReport import views
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 5, in <module>
+    from dailyReport.dailyrecord import *
+SyntaxError: positional argument follows keyword argument (dailyrecord.py, line 41)
+Performing system checks...
+
+Exception ignored in thread started by: <function check_errors.<locals>.wrapper at 0x0000023617F930D0>
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 376, in check
+    all_issues = self._run_checks(
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 396, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\genertec\urls.py", line 18, in <module>
+    from dailyReport import views
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 5, in <module>
+    from dailyReport.dailyrecord import *
+SyntaxError: positional argument follows keyword argument (dailyrecord.py, line 41)
+Performing system checks...
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:54:46
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:55:41
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:56:09
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:56:15
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Exception ignored in thread started by: <function check_errors.<locals>.wrapper at 0x000001E4ADFE30D0>
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 376, in check
+    all_issues = self._run_checks(
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 396, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\genertec\urls.py", line 18, in <module>
+    from dailyReport import views
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 5, in <module>
+    from dailyReport.dailyrecord import *
+SyntaxError: invalid syntax (dailyrecord.py, line 28)
+Performing system checks...
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:56:45
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:56:53
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:57:08
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:57:16
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:57:21
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Exception ignored in thread started by: <function check_errors.<locals>.wrapper at 0x00000202754630D0>
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 376, in check
+    all_issues = self._run_checks(
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\management\base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 396, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\genertec\urls.py", line 18, in <module>
+    from dailyReport import views
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 5, in <module>
+    from dailyReport.dailyrecord import *
+SyntaxError: invalid syntax (dailyrecord.py, line 29)
+Performing system checks...
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:57:59
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:58:05
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:58:11
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:58:28
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:58:36
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:58:43
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 12, 2020 - 08:58:47
+Django version 2.1.7, using settings 'genertec.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CTRL-BREAK.
+[12/Mar/2020 08:59:15] "GET /static/weui/html/project.html HTTP/1.1" 304 0
 Internal Server Error: /dailyreport/
 Traceback (most recent call last):
   File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
@@ -70,900 +577,452 @@ Traceback (most recent call last):
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 34, in index
     data = exeDailyReport(request)
-  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 54, in exeDailyReport
-    data = updateDailyrecord(request)
-  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\dailyrecord.py", line 44, in updateDailyrecord
-    id = int(id)
-TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
-[10/Mar/2020 13:24:30] "GET /dailyreport/?action=insert HTTP/1.1" 500 71929
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 49, in exeDailyReport
+    data = getDailyrecord(request)
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\dailyrecord.py", line 32, in getDailyrecord
+    ret = getDailyrecordByProject(project, dateStart, dateEnd)
+  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\dailyrecord.py", line 49, in getDailyrecordByProject
+    res = tbdailyrecord.objects.filter(project = project, date__gte = dateBegin, date__lte = dateEnd)
+NameError: name 'dateBegin' is not defined
+[12/Mar/2020 08:59:16] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 500 15172
 Performing system checks...
 
 System check identified no issues (0 silenced).
-March 10, 2020 - 13:23:11
+March 12, 2020 - 08:59:11
 Django version 2.1.7, using settings 'genertec.settings'
 Starting development server at http://0.0.0.0:8888/
 Quit the server with CTRL-BREAK.
-[10/Mar/2020 13:25:18] "GET /bigscreen/ HTTP/1.1" 200 13025
-[10/Mar/2020 13:25:19] "GET /static/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 404 1725
-[10/Mar/2020 13:25:19] "GET /static/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 404 1722
-[10/Mar/2020 13:25:19] "GET /static/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 404 1719
-----------------------------------------
-Exception happened during processing of request from ('127.0.0.1', 65197)
-Traceback (most recent call last):
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\socketserver.py", line 650, in process_request_thread
-    self.finish_request(request, client_address)
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\socketserver.py", line 360, in finish_request
-    self.RequestHandlerClass(request, client_address, self)
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\socketserver.py", line 720, in __init__
-    self.handle()
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py", line 171, in handle
-    self.handle_one_request()
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py", line 179, in handle_one_request
-    self.raw_requestline = self.rfile.readline(65537)
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\socket.py", line 669, in readinto
-    return self._sock.recv_into(b)
-ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
-----------------------------------------
+[12/Mar/2020 08:59:35] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 08:59:35] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 08:59:42] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 274
+[12/Mar/2020 08:59:49] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 08:59:50] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 08:59:57] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 09:01:59] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:02:07] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 09:02:41] "GET /static/weui/html/project.html HTTP/1.1" 200 4412
+[12/Mar/2020 09:02:41] "GET /static/weui/css/demos.css HTTP/1.1" 200 724
+[12/Mar/2020 09:02:41] "GET /static/weui/lib/fastclick.js HTTP/1.1" 200 25965
+[12/Mar/2020 09:02:41] "GET /static/weui/data/data.js HTTP/1.1" 200 29036
+[12/Mar/2020 09:02:41] "GET /static/weui/css/jquery-weui.css HTTP/1.1" 200 67323
+[12/Mar/2020 09:02:41] "GET /static/weui/lib/weui.min.css HTTP/1.1" 200 51033
+[12/Mar/2020 09:02:41] "GET /static/weui/js/project.js HTTP/1.1" 200 6947
+[12/Mar/2020 09:02:41] "GET /static/weui/js/lib.js HTTP/1.1" 200 1685
+[12/Mar/2020 09:02:42] "GET /static/weui/lib/jquery-2.1.4.js HTTP/1.1" 200 247597
+[12/Mar/2020 09:02:42] "GET /static/weui/js/jquery-weui.js HTTP/1.1" 200 206409
+[12/Mar/2020 09:02:42] "GET /static/weui/js/echarts.js HTTP/1.1" 200 1392863
+[12/Mar/2020 09:02:42] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:02:50] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 274
+[12/Mar/2020 09:02:54] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:03:09] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:03:15] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:03:15] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:03:15] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:03:40] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:03:40] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:03:40] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:03:42] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:03:42] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:03:48] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:03:55] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 274
+[12/Mar/2020 09:04:00] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:04:01] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:04:05] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:04:10] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:04:10] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:04:10] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:04:15] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:04:27] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:04:27] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:04:27] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:04:30] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 09:04:36] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:04:38] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 09:05:23] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:05:23] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:05:23] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:05:26] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 09:05:29] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:05:30] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 09:24:42] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:24:42] "GET /static/weui/js/project.js HTTP/1.1" 200 6984
+[12/Mar/2020 09:24:42] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:25:35] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:25:35] "GET /static/weui/js/project.js HTTP/1.1" 200 7002
+[12/Mar/2020 09:25:35] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:25:46] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 09:25:49] "GET /static/weui/html/input.html?id=8&department=[object%20HTMLInputElement]&date=2020-03-12 HTTP/1.1" 200 3998
+[12/Mar/2020 09:25:49] "GET /static/weui/js/input.js HTTP/1.1" 200 5192
+[12/Mar/2020 09:25:49] "POST /dailyreport/?action=get&id=8 HTTP/1.1" 200 355
+[12/Mar/2020 09:26:59] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:27:04] "GET /static/weui/html/input.html?id=5&department=[object%20HTMLInputElement]&date=2020-02-29 HTTP/1.1" 200 3998
+[12/Mar/2020 09:27:04] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 242
+[12/Mar/2020 09:27:08] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:27:25] "GET /static/weui/html/input.html?id=14&department=[object%20HTMLInputElement]&date=2020-03-12 HTTP/1.1" 200 3998
+[12/Mar/2020 09:27:25] "POST /dailyreport/?action=get&id=14 HTTP/1.1" 200 416
+[12/Mar/2020 09:28:27] "GET /static/weui/html/input.html?id=14&department=[object%20HTMLInputElement]&date=2020-03-12 HTTP/1.1" 304 0
+[12/Mar/2020 09:28:27] "POST /dailyreport/?action=get&id=14 HTTP/1.1" 200 416
+[12/Mar/2020 09:28:30] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:28:31] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 242
+[12/Mar/2020 09:28:34] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:29:18] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:29:18] "GET /static/weui/js/project.js HTTP/1.1" 200 7048
+[12/Mar/2020 09:29:18] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:29:19] "GET /static/weui/html/input.html?id=14&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-12 HTTP/1.1" 200 3998
+[12/Mar/2020 09:29:19] "POST /dailyreport/?action=get&id=14 HTTP/1.1" 200 416
+[12/Mar/2020 09:29:25] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:29:28] "GET /static/weui/html/input.html?id=1&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3998
+[12/Mar/2020 09:29:28] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 227
+[12/Mar/2020 09:29:30] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:29:31] "GET /static/weui/html/input.html?id=2&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3998
+[12/Mar/2020 09:29:31] "POST /dailyreport/?action=get&id=2 HTTP/1.1" 200 228
+[12/Mar/2020 09:29:34] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:29:39] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:29:42] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 643
+[12/Mar/2020 09:29:43] "GET /static/weui/html/input.html?id=12&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-12 HTTP/1.1" 200 3998
+[12/Mar/2020 09:29:43] "POST /dailyreport/?action=get&id=12 HTTP/1.1" 200 344
+[12/Mar/2020 09:29:45] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:29:51] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:29:55] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:29:58] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:30:03] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 09:30:49] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:30:49] "GET /static/weui/js/project.js HTTP/1.1" 200 7138
+[12/Mar/2020 09:30:49] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:30:51] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:30:51] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:30:51] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:30:56] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:30:56] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:30:56] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:30:58] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:30:58] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:30:58] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:30:59] "POST /dailyreport/?action=get&id=2 HTTP/1.1" 200 228
+[12/Mar/2020 09:31:02] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:32:55] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:32:55] "GET /static/weui/js/project.js HTTP/1.1" 200 7137
+[12/Mar/2020 09:32:55] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:33:14] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:33:14] "GET /static/weui/js/project.js HTTP/1.1" 200 7137
+[12/Mar/2020 09:33:14] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:33:15] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:33:15] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:33:15] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:33:20] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 227
+[12/Mar/2020 09:33:21] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:33:23] "POST /dailyreport/?action=get&id=2 HTTP/1.1" 200 228
+[12/Mar/2020 09:33:24] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:33:58] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:34:00] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:34:01] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:36:07] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:36:48] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:36:57] "POST /dailyreport/?action=get&id=2 HTTP/1.1" 200 228
+[12/Mar/2020 09:36:59] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:38:15] "GET /static/weui/demos/index.html HTTP/1.1" 200 11049
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/css/demos.css HTTP/1.1" 200 593
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_button.png HTTP/1.1" 200 1232
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_cell.png HTTP/1.1" 200 196
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_toast.png HTTP/1.1" 200 701
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_dialog.png HTTP/1.1" 200 838
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_progress.png HTTP/1.1" 200 334
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_article.png HTTP/1.1" 200 425
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_msg.png HTTP/1.1" 200 2967
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_actionSheet.png HTTP/1.1" 200 15352
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_icons.png HTTP/1.1" 200 1735
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_panel.png HTTP/1.1" 200 669
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_tab.png HTTP/1.1" 200 521
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_ptr.png HTTP/1.1" 200 602
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_search_bar.png HTTP/1.1" 200 1445
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_new.png HTTP/1.1" 200 6299
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_up.png HTTP/1.1" 200 816
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_picker.png HTTP/1.1" 200 2055
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_calendar.png HTTP/1.1" 200 737
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_city.png HTTP/1.1" 200 1702
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_datetime.png HTTP/1.1" 200 1549
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_swiper.png HTTP/1.1" 200 17404
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_select.png HTTP/1.1" 200 1223
+[12/Mar/2020 09:38:16] "GET /static/weui/demos/images/icon_nav_photo.png HTTP/1.1" 200 716
+[12/Mar/2020 09:38:17] "GET /static/weui/demos/cell.html HTTP/1.1" 200 9342
+[12/Mar/2020 09:43:53] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:43:53] "GET /static/weui/data/data.js HTTP/1.1" 304 0
+[12/Mar/2020 09:43:53] "GET /static/weui/js/project.js HTTP/1.1" 200 7183
+[12/Mar/2020 09:43:53] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:44:08] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:44:08] "GET /static/weui/js/project.js HTTP/1.1" 200 7147
+[12/Mar/2020 09:44:09] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:44:10] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:44:10] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:44:11] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:44:26] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:44:26] "GET /static/weui/js/project.js HTTP/1.1" 200 7147
+[12/Mar/2020 09:44:26] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:44:35] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:44:35] "GET /static/weui/js/project.js HTTP/1.1" 200 7147
+[12/Mar/2020 09:44:36] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:44:37] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:44:37] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:44:37] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:45:23] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:45:23] "GET /static/weui/js/project.js HTTP/1.1" 200 7147
+[12/Mar/2020 09:45:23] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:45:38] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:45:38] "GET /static/weui/js/project.js HTTP/1.1" 200 7147
+[12/Mar/2020 09:45:38] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:45:39] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:45:39] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:45:39] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:45:42] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:45:42] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:45:43] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:50:59] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:51:00] "GET /static/weui/js/project.js HTTP/1.1" 200 7147
+[12/Mar/2020 09:51:00] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:51:01] "GET /static/weui/html/input.html?id=1&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3998
+[12/Mar/2020 09:51:01] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 227
+[12/Mar/2020 09:51:03] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:52:56] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:52:56] "GET /static/weui/js/project.js HTTP/1.1" 200 7374
+[12/Mar/2020 09:52:56] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:52:58] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:52:58] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:52:58] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:53:21] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:53:21] "GET /static/weui/js/project.js HTTP/1.1" 200 7399
+[12/Mar/2020 09:53:21] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:53:23] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:53:23] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:53:24] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:53:25] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 227
+[12/Mar/2020 09:53:28] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:53:28] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3998
+[12/Mar/2020 09:53:29] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 242
+[12/Mar/2020 09:53:53] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
+[12/Mar/2020 09:53:53] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 242
+[12/Mar/2020 09:53:54] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
+[12/Mar/2020 09:53:54] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 242
+[12/Mar/2020 09:53:59] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:54:02] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 09:54:05] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 274
+[12/Mar/2020 09:54:18] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 285
+[12/Mar/2020 09:54:20] "GET /static/weui/html/input.html?id=11&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-12 HTTP/1.1" 200 3998
+[12/Mar/2020 09:54:20] "POST /dailyreport/?action=get&id=11 HTTP/1.1" 200 285
+[12/Mar/2020 09:54:23] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:57:21] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 227
+[12/Mar/2020 09:57:23] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:57:24] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:57:24] "GET /static/weui/js/project.js HTTP/1.1" 200 7396
+[12/Mar/2020 09:57:25] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:58:02] "GET /static/weui/html/project.html HTTP/1.1" 200 5513
+[12/Mar/2020 09:58:02] "GET /static/weui/js/project.js HTTP/1.1" 200 7396
+[12/Mar/2020 09:58:03] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:58:11] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:58:11] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:58:11] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:59:12] "GET /static/weui/html/project.html HTTP/1.1" 200 4391
+[12/Mar/2020 09:59:12] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:59:12] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:59:30] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:59:30] "GET /static/weui/js/project.js HTTP/1.1" 200 7366
+[12/Mar/2020 09:59:31] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:59:32] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:59:32] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:59:32] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:59:33] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 09:59:33] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 09:59:33] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 09:59:36] "POST /dailyreport/?action=get&id=2 HTTP/1.1" 200 228
+[12/Mar/2020 09:59:39] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:00:45] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:00:45] "GET /static/weui/js/project.js HTTP/1.1" 200 7348
+[12/Mar/2020 10:00:45] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:00:46] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:00:47] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:04:26] "GET /static/weui/demos/cell.html HTTP/1.1" 200 10235
+[12/Mar/2020 10:04:53] "GET /static/weui/demos/cell.html HTTP/1.1" 200 9342
+[12/Mar/2020 10:04:58] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:04:58] "GET /static/weui/js/project.js HTTP/1.1" 200 7086
+[12/Mar/2020 10:04:58] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:04:58] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:04:59] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:05:42] "GET /static/weui/html/project.html HTTP/1.1" 200 4391
+[12/Mar/2020 10:05:42] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:05:42] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:05:43] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:05:44] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:06:11] "GET /static/weui/html/project.html HTTP/1.1" 200 4397
+[12/Mar/2020 10:06:11] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:06:11] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:06:15] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 227
+[12/Mar/2020 10:06:17] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:06:18] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3998
+[12/Mar/2020 10:06:18] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 242
+[12/Mar/2020 10:06:20] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:06:38] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 10:06:41] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 643
+[12/Mar/2020 10:11:16] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:11:16] "GET /static/weui/js/project.js HTTP/1.1" 200 7365
+[12/Mar/2020 10:11:16] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:11:18] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:11:18] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:11:18] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:11:23] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 10:11:29] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 10:11:54] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:11:54] "GET /static/weui/js/project.js HTTP/1.1" 200 7456
+[12/Mar/2020 10:11:54] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:12:11] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:12:11] "GET /static/weui/js/project.js HTTP/1.1" 200 7391
+[12/Mar/2020 10:12:11] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:12:25] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:12:26] "GET /static/weui/js/project.js HTTP/1.1" 200 7351
+[12/Mar/2020 10:12:26] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:13:08] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:13:08] "GET /static/weui/js/project.js HTTP/1.1" 200 7411
+[12/Mar/2020 10:13:08] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:13:09] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:13:09] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:13:09] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:13:15] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 10:13:40] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 10:16:00] "GET /static/weui/html/project.html HTTP/1.1" 200 4515
+[12/Mar/2020 10:16:00] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:16:00] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:16:02] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:16:02] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:16:49] "GET /static/weui/html/project.html HTTP/1.1" 200 4536
+[12/Mar/2020 10:16:49] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:16:49] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:17:11] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 10:17:46] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 285
+[12/Mar/2020 10:17:50] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 10:19:07] "GET /static/weui/html/project.html HTTP/1.1" 200 4478
+[12/Mar/2020 10:19:07] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:19:07] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:40:08] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:40:08] "GET /static/weui/data/data.js HTTP/1.1" 304 0
+[12/Mar/2020 10:40:08] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:40:09] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:45:16] "GET /static/weui/html/project.html HTTP/1.1" 200 4500
+[12/Mar/2020 10:45:16] "GET /static/weui/js/project.js HTTP/1.1" 200 7439
+[12/Mar/2020 10:45:16] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:45:38] "GET /static/weui/html/project.html HTTP/1.1" 200 4521
+[12/Mar/2020 10:45:38] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:45:38] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:47:56] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:47:56] "GET /static/weui/js/project.js HTTP/1.1" 200 7539
+[12/Mar/2020 10:47:56] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:47:57] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:47:57] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:47:57] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:48:01] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:48:01] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:48:01] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:48:10] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:48:12] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 10:49:08] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:49:08] "GET /static/weui/js/project.js HTTP/1.1" 200 6752
+[12/Mar/2020 10:49:09] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:49:24] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:49:24] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:49:24] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:49:33] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:49:33] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:49:33] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:49:41] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:49:41] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:49:41] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:49:51] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:49:51] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:49:51] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:49:52] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:49:52] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:50:04] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:50:04] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:50:05] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:50:06] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:50:06] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:50:14] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:50:14] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:50:14] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:50:16] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:50:16] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:50:50] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:50:50] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:50:50] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:50:51] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:50:51] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:51:09] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 23
+[12/Mar/2020 10:51:25] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:51:25] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:51:25] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:52:07] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:52:07] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:52:07] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:52:08] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:52:09] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:52:10] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:52:10] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:55:48] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:55:48] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:55:48] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:55:51] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:55:51] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 10:57:07] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 10:57:08] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 10:57:08] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 12:37:57] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 12:37:57] "GET /static/weui/data/data.js HTTP/1.1" 304 0
+[12/Mar/2020 12:37:57] "GET /static/weui/js/project.js HTTP/1.1" 304 0
+[12/Mar/2020 12:37:57] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
+[12/Mar/2020 12:37:58] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 12:38:09] "POST /dailyreport/?action=get&id=2 HTTP/1.1" 200 228
+[12/Mar/2020 12:38:14] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 12:38:16] "POST /dailyreport/?action=get&id=14 HTTP/1.1" 200 416
+[12/Mar/2020 13:15:59] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-11 HTTP/1.1" 304 0
+[12/Mar/2020 13:15:59] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
+[12/Mar/2020 13:15:59] "GET /static/weui/js/show.js HTTP/1.1" 304 0
+[12/Mar/2020 13:15:59] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 335
+[12/Mar/2020 13:15:59] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 13:15:59] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 335
+[12/Mar/2020 13:16:03] "GET /static/weui/html/input.html?id=16&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-11 HTTP/1.1" 200 3998
+[12/Mar/2020 13:16:03] "GET /static/weui/data/data.js HTTP/1.1" 304 0
+[12/Mar/2020 13:16:03] "GET /static/weui/js/input.js HTTP/1.1" 200 5257
+[12/Mar/2020 13:16:03] "POST /dailyreport/?action=get&id=16 HTTP/1.1" 200 335
+[12/Mar/2020 13:16:06] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 335
+[12/Mar/2020 13:16:06] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 13:16:06] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 335
+[12/Mar/2020 13:16:09] "GET /static/weui/html/project.html HTTP/1.1" 200 4521
+[12/Mar/2020 13:16:09] "GET /static/weui/js/project.js HTTP/1.1" 200 6752
+[12/Mar/2020 13:16:09] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 13:16:24] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 13:16:28] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 13:17:46] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-11 HTTP/1.1" 304 0
+[12/Mar/2020 13:17:46] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 335
+[12/Mar/2020 13:17:46] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 13:17:46] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 335
+[12/Mar/2020 13:17:49] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 13:17:49] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 13:17:49] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 13:17:53] "GET /static/weui/html/input.html?id=10&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-12 HTTP/1.1" 200 3998
+[12/Mar/2020 13:17:53] "POST /dailyreport/?action=get&id=10 HTTP/1.1" 200 350
+[12/Mar/2020 13:17:56] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 13:17:56] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
+[12/Mar/2020 13:17:56] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 2601
+[12/Mar/2020 13:18:07] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 13:18:21] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 350
+[12/Mar/2020 13:18:33] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 689
+[12/Mar/2020 13:18:41] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 13:18:41] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
 Performing system checks...
 
 System check identified no issues (0 silenced).
-March 10, 2020 - 13:24:57
+March 12, 2020 - 08:59:35
 Django version 2.1.7, using settings 'genertec.settings'
 Starting development server at http://0.0.0.0:8888/
 Quit the server with CTRL-BREAK.
-Internal Server Error: /dailyreport/
-Traceback (most recent call last):
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
-    response = get_response(request)
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 34, in index
-    data = exeDailyReport(request)
-  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\views.py", line 54, in exeDailyReport
-    data = updateDailyrecord(request)
-  File "D:\100-工作\150-开发相关\152-genertec\genertec\dailyReport\dailyrecord.py", line 46, in updateDailyrecord
-    id = int(id)
-TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
-[10/Mar/2020 13:31:36] "GET /dailyreport/?action=insert HTTP/1.1" 500 72064
-[10/Mar/2020 13:32:04] "GET /dailyreport/?action=insert&id=0 HTTP/1.1" 200 48
-[10/Mar/2020 13:33:42] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 23
-[10/Mar/2020 13:33:42] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 13:33:42] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 23
-[10/Mar/2020 13:33:49] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 23
-[10/Mar/2020 13:33:49] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 13:33:54] "GET /static/weui/html/input.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 200 3967
-[10/Mar/2020 13:33:54] "GET /static/weui/data/data.js HTTP/1.1" 304 0
-[10/Mar/2020 13:33:54] "GET /static/weui/js/input.js HTTP/1.1" 200 6954
-[10/Mar/2020 13:34:09] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
-[10/Mar/2020 13:34:11] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 1976
-[10/Mar/2020 13:34:11] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 23
-[10/Mar/2020 13:34:11] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:34:11] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 23
-[10/Mar/2020 13:34:13] "GET /static/weui/html/input.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3967
-[10/Mar/2020 13:34:13] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:34:15] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 23
-[10/Mar/2020 13:34:15] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:34:15] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 23
-Performing system checks...
-
-System check identified no issues (0 silenced).
-March 10, 2020 - 13:26:14
-Django version 2.1.7, using settings 'genertec.settings'
-Starting development server at http://0.0.0.0:8888/
-Quit the server with CTRL-BREAK.
-[10/Mar/2020 13:34:36] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:34:36] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 23
-[10/Mar/2020 13:34:36] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:34:36] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 23
-[10/Mar/2020 13:34:37] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:34:40] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
-[10/Mar/2020 13:34:42] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 207
-[10/Mar/2020 13:34:42] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:34:42] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 207
-[10/Mar/2020 13:34:44] "GET /static/weui/html/input.html?id=1&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3967
-[10/Mar/2020 13:34:47] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 207
-[10/Mar/2020 13:34:47] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:34:47] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 207
-[10/Mar/2020 13:34:48] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:34:53] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
-[10/Mar/2020 13:34:55] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 394
-[10/Mar/2020 13:34:55] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:34:55] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 394
-[10/Mar/2020 13:34:56] "GET /static/weui/html/input.html?id=2&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3967
-Performing system checks...
-
-System check identified no issues (0 silenced).
-March 10, 2020 - 13:34:34
-Django version 2.1.7, using settings 'genertec.settings'
-Starting development server at http://0.0.0.0:8888/
-Quit the server with CTRL-BREAK.
-[10/Mar/2020 13:35:46] "GET /static/weui/html/input.html?id=2&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:35:46] "GET /static/weui/js/input.js HTTP/1.1" 200 6901
-[10/Mar/2020 13:35:47] "POST /dailyreport/?action=get&id=2 HTTP/1.1" 200 208
-[10/Mar/2020 13:35:48] "GET /static/weui/html/input.html?id=2&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:35:48] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:35:48] "POST /dailyreport/?action=get&id=2 HTTP/1.1" 200 208
-[10/Mar/2020 13:35:51] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 13:35:52] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 397
-[10/Mar/2020 13:35:52] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:35:52] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 397
-[10/Mar/2020 13:35:54] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:35:54] "POST /dailyreport/?action=get&id=2 HTTP/1.1" 200 211
-[10/Mar/2020 13:35:56] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 397
-[10/Mar/2020 13:35:56] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:35:56] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 397
-[10/Mar/2020 13:35:56] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:35:57] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 207
-[10/Mar/2020 13:36:00] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 397
-[10/Mar/2020 13:36:00] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:36:00] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 397
-[10/Mar/2020 13:36:01] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:36:01] "POST /dailyreport/?action=get&id=2 HTTP/1.1" 200 211
-[10/Mar/2020 13:36:28] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 13:36:29] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 397
-[10/Mar/2020 13:36:29] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:36:29] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 397
-[10/Mar/2020 13:36:45] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:36:45] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 207
-[10/Mar/2020 13:37:37] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 13:37:42] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 400
-[10/Mar/2020 13:37:42] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:37:42] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 400
-Performing system checks...
-
-System check identified no issues (0 silenced).
-March 10, 2020 - 13:35:40
-Django version 2.1.7, using settings 'genertec.settings'
-Starting development server at http://0.0.0.0:8888/
-Quit the server with CTRL-BREAK.
-[10/Mar/2020 13:38:33] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:38:33] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 400
-[10/Mar/2020 13:38:33] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:38:34] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 400
-[10/Mar/2020 13:38:35] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:38:41] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
-[10/Mar/2020 13:38:42] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 587
-[10/Mar/2020 13:38:42] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:38:42] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 587
-Performing system checks...
-
-System check identified no issues (0 silenced).
-March 10, 2020 - 13:38:21
-Django version 2.1.7, using settings 'genertec.settings'
-Starting development server at http://0.0.0.0:8888/
-Quit the server with CTRL-BREAK.
-[10/Mar/2020 13:39:03] "GET /static/weui/html/input.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:39:03] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:39:08] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
-[10/Mar/2020 13:39:09] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 774
-[10/Mar/2020 13:39:09] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:39:09] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 774
-[10/Mar/2020 13:40:03] "GET /static/weui/js/input.js HTTP/1.1" 200 6930
-[10/Mar/2020 13:40:08] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
-[10/Mar/2020 13:40:09] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1008
-[10/Mar/2020 13:40:09] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:40:09] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1008
-[10/Mar/2020 13:40:15] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3967
-[10/Mar/2020 13:40:15] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:40:15] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 255
-[10/Mar/2020 13:40:43] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 13:40:44] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1067
-[10/Mar/2020 13:40:44] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:40:44] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1067
-[10/Mar/2020 13:40:46] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:40:46] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 314
-[10/Mar/2020 13:42:11] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:42:11] "GET /static/weui/data/data.js HTTP/1.1" 304 0
-[10/Mar/2020 13:42:11] "GET /static/weui/js/input.js HTTP/1.1" 200 6908
-[10/Mar/2020 13:42:11] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 314
-[10/Mar/2020 13:42:51] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:42:51] "GET /static/weui/js/input.js HTTP/1.1" 200 6940
-[10/Mar/2020 13:42:51] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 314
-[10/Mar/2020 13:42:54] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:42:54] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:42:54] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 314
-[10/Mar/2020 13:43:07] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:43:07] "GET /static/weui/js/input.js HTTP/1.1" 200 6943
-[10/Mar/2020 13:43:07] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 314
-[10/Mar/2020 13:43:10] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:43:10] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:43:10] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 314
-[10/Mar/2020 13:43:27] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 13:43:28] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1041
-[10/Mar/2020 13:43:28] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 13:43:28] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1041
-[10/Mar/2020 13:43:30] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:43:30] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:44:22] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:44:22] "GET /static/weui/js/input.js HTTP/1.1" 200 7025
-[10/Mar/2020 13:44:22] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:44:54] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:44:54] "GET /static/weui/js/input.js HTTP/1.1" 200 7029
-[10/Mar/2020 13:44:55] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:44:56] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:44:56] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:44:56] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:46:18] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:46:18] "GET /static/weui/js/input.js HTTP/1.1" 200 7114
-[10/Mar/2020 13:46:21] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:46:21] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:46:30] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:46:30] "GET /static/weui/js/input.js HTTP/1.1" 200 7113
-[10/Mar/2020 13:46:32] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:46:32] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:46:34] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:46:34] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:46:59] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:46:59] "GET /static/weui/js/input.js HTTP/1.1" 200 7114
-[10/Mar/2020 13:47:00] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:47:00] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:47:02] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:47:02] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:47:31] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:47:31] "GET /static/weui/js/input.js HTTP/1.1" 200 7202
-[10/Mar/2020 13:47:31] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:47:33] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:47:33] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:47:33] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:54:24] "GET /static/weui/html/input.html HTTP/1.1" 304 0
-[10/Mar/2020 13:54:24] "GET /static/weui/data/data.js HTTP/1.1" 304 0
-[10/Mar/2020 13:54:24] "GET /static/weui/js/input.js HTTP/1.1" 200 7204
-[10/Mar/2020 13:54:51] "GET /static/weui/html/input.html HTTP/1.1" 304 0
-[10/Mar/2020 13:54:51] "GET /static/weui/js/input.js HTTP/1.1" 200 7203
-[10/Mar/2020 13:54:56] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:54:56] "GET /static/weui/data/data.js HTTP/1.1" 304 0
-[10/Mar/2020 13:54:56] "GET /static/weui/js/input.js HTTP/1.1" 200 7203
-[10/Mar/2020 13:54:57] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:54:57] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:55:07] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:55:07] "GET /static/weui/js/input.js HTTP/1.1" 200 7205
-[10/Mar/2020 13:55:07] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:55:09] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:55:09] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:55:09] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:56:13] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:56:13] "GET /static/weui/js/input.js HTTP/1.1" 200 7216
-[10/Mar/2020 13:56:34] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:56:34] "GET /static/weui/js/input.js HTTP/1.1" 200 7216
-[10/Mar/2020 13:56:34] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:56:36] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:56:36] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:56:36] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:58:51] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:58:51] "GET /static/weui/js/input.js HTTP/1.1" 200 7129
-[10/Mar/2020 13:58:51] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:58:52] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:58:52] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 13:58:52] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:59:37] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:59:37] "GET /static/weui/js/input.js HTTP/1.1" 200 7178
-[10/Mar/2020 13:59:38] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 13:59:57] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 13:59:57] "GET /static/weui/js/input.js HTTP/1.1" 200 7177
-[10/Mar/2020 13:59:57] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:00:11] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:00:11] "GET /static/weui/js/input.js HTTP/1.1" 200 7211
-[10/Mar/2020 14:00:11] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:00:29] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:00:29] "GET /static/weui/js/input.js HTTP/1.1" 200 7179
-[10/Mar/2020 14:00:30] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:03:45] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:03:45] "GET /static/weui/js/input.js HTTP/1.1" 200 7218
-[10/Mar/2020 14:03:45] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:03:46] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:03:46] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:03:46] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:08:07] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:08:07] "GET /static/weui/data/data.js HTTP/1.1" 304 0
-[10/Mar/2020 14:08:07] "GET /static/weui/js/input.js HTTP/1.1" 200 6908
-[10/Mar/2020 14:08:08] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:08:10] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:08:10] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:08:10] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:08:29] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:08:29] "GET /static/weui/js/input.js HTTP/1.1" 200 6971
-[10/Mar/2020 14:08:29] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:09:56] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:09:56] "GET /static/weui/js/input.js HTTP/1.1" 200 7067
-[10/Mar/2020 14:09:56] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:11:12] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:11:12] "GET /static/weui/js/input.js HTTP/1.1" 200 7153
-[10/Mar/2020 14:11:13] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:11:13] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:11:13] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:11:13] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:11:14] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:11:14] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:11:14] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:11:51] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:11:51] "GET /static/weui/js/input.js HTTP/1.1" 200 7161
-[10/Mar/2020 14:11:51] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:11:53] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:11:53] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:11:53] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:13:31] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:13:31] "GET /static/weui/js/input.js HTTP/1.1" 200 7193
-[10/Mar/2020 14:13:31] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:13:32] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:13:32] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:13:32] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:13:41] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 14:13:42] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1041
-[10/Mar/2020 14:13:42] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:13:42] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1041
-[10/Mar/2020 14:13:46] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:13:46] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:16:19] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1041
-[10/Mar/2020 14:16:19] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:16:19] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1041
-[10/Mar/2020 14:16:21] "GET /static/weui/html/input.html?id=1&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:16:21] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:16:21] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 210
-[10/Mar/2020 14:16:25] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 14:16:27] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1058
-[10/Mar/2020 14:16:27] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:16:27] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1058
-[10/Mar/2020 14:16:29] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 227
-[10/Mar/2020 14:16:36] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1058
-[10/Mar/2020 14:16:36] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:16:36] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1058
-[10/Mar/2020 14:16:37] "GET /static/weui/html/input.html?id=2&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:16:37] "POST /dailyreport/?action=get&id=2 HTTP/1.1" 200 211
-[10/Mar/2020 14:16:40] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 14:16:41] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1075
-[10/Mar/2020 14:16:41] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:16:41] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1075
-[10/Mar/2020 14:16:42] "GET /static/weui/html/input.html?id=3&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3967
-[10/Mar/2020 14:16:42] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:16:42] "POST /dailyreport/?action=get&id=3 HTTP/1.1" 200 208
-[10/Mar/2020 14:16:46] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 14:16:47] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:16:47] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:16:47] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:16:49] "POST /dailyreport/?action=get&id=3 HTTP/1.1" 200 264
-[10/Mar/2020 14:16:50] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:16:50] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:16:50] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:16:51] "GET /static/weui/html/input.html?id=4&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3967
-[10/Mar/2020 14:16:51] "POST /dailyreport/?action=get&id=4 HTTP/1.1" 200 208
-[10/Mar/2020 14:17:02] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:17:02] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:17:02] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:17:12] "GET /static/weui/html/input.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-01 HTTP/1.1" 200 3967
-[10/Mar/2020 14:17:12] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:17:14] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:17:14] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:17:14] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:34] "GET /static/weui/html/input.html?id=3&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:26:34] "GET /static/weui/data/data.js HTTP/1.1" 304 0
-[10/Mar/2020 14:26:34] "GET /static/weui/js/input.js HTTP/1.1" 200 7112
-[10/Mar/2020 14:26:34] "POST /dailyreport/?action=get&id=3 HTTP/1.1" 200 264
-[10/Mar/2020 14:26:36] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:36] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:36] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:36] "GET /static/weui/html/input.html?id=1&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:26:36] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 227
-[10/Mar/2020 14:26:38] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:38] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:38] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:46] "POST /dailyreport/?action=get&date=2020-02-12 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:47] "POST /dailyreport/?action=get&date=2020-02-13 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:48] "POST /dailyreport/?action=get&date=2020-02-12 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:48] "POST /dailyreport/?action=get&date=2020-02-13 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:49] "POST /dailyreport/?action=get&date=2020-02-12 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:49] "POST /dailyreport/?action=get&date=2020-02-13 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:52] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:52] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:54] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:54] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:55] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:55] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:57] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:57] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:57] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:57] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:59] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:59] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:26:59] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:26:59] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:27:00] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:00] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:27:11] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:11] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:27:13] "POST /dailyreport/?action=get&id=1 HTTP/1.1" 200 227
-[10/Mar/2020 14:27:16] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:16] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:27:16] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:18] "POST /dailyreport/?action=get&id=3 HTTP/1.1" 200 264
-[10/Mar/2020 14:27:19] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:19] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:27:19] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:20] "GET /static/weui/html/input.html?id=4&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:27:20] "POST /dailyreport/?action=get&id=4 HTTP/1.1" 200 208
-[10/Mar/2020 14:27:22] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:22] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:27:22] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:23] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:27:23] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:27:27] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:27] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:27:27] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:31] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:31] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:27:32] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:32] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:27:34] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:34] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:27:35] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1131
-[10/Mar/2020 14:27:35] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:27:36] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:27:36] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:28:21] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:28:21] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:28:22] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:28:22] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:29:44] "GET /static/weui/html/input.html?id=5&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-02-29 HTTP/1.1" 304 0
-[10/Mar/2020 14:29:44] "GET /static/weui/js/input.js HTTP/1.1" 200 6920
-[10/Mar/2020 14:29:44] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 288
-[10/Mar/2020 14:30:32] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 14:30:34] "GET /static/weui/html/show.html?department=IT%E6%B2%BB%E7%90%86%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 1976
-[10/Mar/2020 14:30:34] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1073
-[10/Mar/2020 14:30:34] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:30:34] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1073
-[10/Mar/2020 14:30:36] "GET /static/weui/html/input.html?id=5&department=IT%E6%B2%BB%E7%90%86%E9%83%A8&date=2020-02-29 HTTP/1.1" 200 3967
-[10/Mar/2020 14:30:36] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:30:36] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 230
-[10/Mar/2020 14:30:42] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 14:30:43] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1085
-[10/Mar/2020 14:30:44] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:30:44] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1085
-[10/Mar/2020 14:30:45] "POST /dailyreport/?action=get&id=5 HTTP/1.1" 200 242
-[10/Mar/2020 14:30:46] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 14:30:48] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1085
-[10/Mar/2020 14:30:48] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:30:48] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1085
-[10/Mar/2020 14:30:50] "GET /static/weui/html/input.html?department=IT%E6%B2%BB%E7%90%86%E9%83%A8&date=2020-03-01 HTTP/1.1" 200 3967
-[10/Mar/2020 14:30:50] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:30:55] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1085
-[10/Mar/2020 14:30:55] "POST /dailyreport/?action=get&date=2020-03-01 HTTP/1.1" 200 23
-[10/Mar/2020 14:30:55] "POST /dailyreport/?action=get&date=2020-02-29 HTTP/1.1" 200 1085
-[10/Mar/2020 14:31:01] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 23
-[10/Mar/2020 14:31:01] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:31:01] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 23
-[10/Mar/2020 14:31:10] "GET /static/weui/html/input.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:31:10] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:31:40] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
-[10/Mar/2020 14:31:41] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 200 1976
-[10/Mar/2020 14:31:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 319
-[10/Mar/2020 14:31:41] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:31:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 319
-[10/Mar/2020 14:31:43] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 200 3967
-[10/Mar/2020 14:31:43] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:31:43] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 319
-[10/Mar/2020 14:32:00] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 14:32:02] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:32:02] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:32:02] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:32:03] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:32:59] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:32:59] "GET /static/weui/js/input.js HTTP/1.1" 200 6942
-[10/Mar/2020 14:32:59] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:33:44] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:33:44] "GET /static/weui/js/input.js HTTP/1.1" 200 6991
-[10/Mar/2020 14:33:44] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:33:49] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:33:49] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:33:49] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:33:50] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:33:50] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:33:50] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:33:50] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:33:50] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:33:50] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:33:50] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:33:50] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:33:50] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:33:51] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:33:51] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:33:51] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:33:51] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:34:01] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:34:01] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:34:01] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:34:02] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:34:02] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:34:04] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:34:04] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:34:04] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:35:00] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:35:00] "GET /static/weui/js/input.js HTTP/1.1" 200 5863
-[10/Mar/2020 14:35:00] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:35:00] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:35:00] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:35:01] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:35:46] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:35:46] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:35:46] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:35:48] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:35:49] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:35:49] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:35:49] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:35:50] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:35:50] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:35:50] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:35:50] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:35:51] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:35:51] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:35:54] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:35:54] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:35:54] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:36:41] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:36:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:36:41] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:36:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:36:47] "POST /dailyreport/?action=get&date=2020-03-06 HTTP/1.1" 200 23
-[10/Mar/2020 14:36:47] "POST /dailyreport/?action=get&date=2020-03-07 HTTP/1.1" 200 23
-[10/Mar/2020 14:38:27] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:38:28] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 200 3989
-[10/Mar/2020 14:38:28] "GET /static/weui/js/input.js HTTP/1.1" 200 5953
-[10/Mar/2020 14:38:28] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:38:45] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 200 3992
-[10/Mar/2020 14:38:45] "GET /static/weui/data/data.js HTTP/1.1" 304 0
-[10/Mar/2020 14:38:45] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:38:45] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:38:47] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:38:47] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:38:47] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:38:48] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:38:49] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:38:49] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:38:49] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:38:49] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:38:49] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:38:49] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:38:55] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:38:55] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:38:55] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:38:58] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:39:16] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:39:16] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:39:16] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:39:19] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:39:19] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:39:19] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:39:46] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:39:46] "GET /static/weui/js/input.js HTTP/1.1" 200 5966
-[10/Mar/2020 14:39:46] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:39:51] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:39:55] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:40:27] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:40:27] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:40:27] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:40:31] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 23
-[10/Mar/2020 14:40:31] "POST /dailyreport/?action=get&date=2020-03-13 HTTP/1.1" 200 23
-[10/Mar/2020 14:40:36] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:40:36] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:43:51] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:43:51] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:43:51] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:43:51] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:43:53] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:43:53] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:43:53] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:43:53] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:44:39] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:44:39] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:44:39] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:44:39] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:44:40] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:44:40] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:44:40] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:44:40] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:45:40] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:45:40] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:45:40] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:45:40] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:45:41] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:45:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:45:41] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:45:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:45:41] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:45:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:45:41] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:45:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:45:41] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:45:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:45:41] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:45:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:45:42] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:45:42] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:45:42] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:45:42] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:45:42] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:45:42] "GET /static/weui/js/input.js HTTP/1.1" 200 5192
-[10/Mar/2020 14:46:13] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:46:13] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:46:14] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:46:25] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 200 3992
-[10/Mar/2020 14:46:25] "GET /static/weui/css/jquery-weui.css HTTP/1.1" 200 67323
-[10/Mar/2020 14:46:25] "GET /static/weui/css/demos.css HTTP/1.1" 200 724
-[10/Mar/2020 14:46:25] "GET /static/weui/lib/weui.min.css HTTP/1.1" 200 51033
-[10/Mar/2020 14:46:25] "GET /static/weui/lib/fastclick.js HTTP/1.1" 200 25965
-[10/Mar/2020 14:46:25] "GET /static/weui/data/data.js HTTP/1.1" 200 2392
-[10/Mar/2020 14:46:25] "GET /static/weui/js/lib.js HTTP/1.1" 200 955
-[10/Mar/2020 14:46:25] "GET /static/weui/js/input.js HTTP/1.1" 200 5192
-[10/Mar/2020 14:46:25] "GET /static/weui/js/jquery-weui.js HTTP/1.1" 200 206409
-[10/Mar/2020 14:46:25] "GET /static/weui/lib/jquery-2.1.4.js HTTP/1.1" 200 247597
-[10/Mar/2020 14:46:26] "GET /static/weui/js/echarts.js HTTP/1.1" 200 1392863
-[10/Mar/2020 14:46:26] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:46:28] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 200 1976
-[10/Mar/2020 14:46:28] "GET /static/weui/js/show.js HTTP/1.1" 200 4719
-[10/Mar/2020 14:46:28] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:46:28] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:46:28] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:46:30] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:46:30] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:46:30] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:46:30] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:46:31] "GET /static/weui/html/show.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[10/Mar/2020 14:46:31] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:46:31] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:46:31] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:46:32] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:46:34] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:46:34] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:46:34] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 393
-[10/Mar/2020 14:46:35] "GET /static/weui/html/input.html?department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 200 3992
-[10/Mar/2020 14:46:39] "POST /dailyreport/?action=insert HTTP/1.1" 200 48
-[10/Mar/2020 14:46:41] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[10/Mar/2020 14:46:41] "GET /static/weui/js/show.js HTTP/1.1" 304 0
-[10/Mar/2020 14:46:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 619
-[10/Mar/2020 14:46:41] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:46:41] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 619
-[10/Mar/2020 14:46:43] "GET /static/weui/html/input.html?id=7&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 200 3992
-[10/Mar/2020 14:46:43] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:46:43] "POST /dailyreport/?action=get&id=7 HTTP/1.1" 200 247
-[10/Mar/2020 14:46:45] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 14:46:48] "GET /static/weui/js/show.js HTTP/1.1" 304 0
-[10/Mar/2020 14:46:48] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 646
-[10/Mar/2020 14:46:48] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:46:48] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 646
-[10/Mar/2020 14:46:49] "POST /dailyreport/?action=get&id=7 HTTP/1.1" 200 274
-[10/Mar/2020 14:46:55] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 646
-[10/Mar/2020 14:46:55] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:46:55] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 646
-[10/Mar/2020 14:51:40] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 200 3998
-[10/Mar/2020 14:51:40] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[10/Mar/2020 14:51:40] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[10/Mar/2020 14:51:40] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[10/Mar/2020 14:51:44] "POST /dailyreport/?action=insert HTTP/1.1" 200 49
-[10/Mar/2020 14:51:46] "GET /static/weui/js/show.js HTTP/1.1" 304 0
-[10/Mar/2020 14:51:46] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 646
-[10/Mar/2020 14:51:46] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 14:51:46] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 646
-[10/Mar/2020 15:31:32] "GET /static/weui/html/project.html HTTP/1.1" 200 945
-[10/Mar/2020 15:32:07] "GET /static/weui/html/project.html HTTP/1.1" 200 901
-[10/Mar/2020 15:32:07] "GET /static/weui/data/data.js HTTP/1.1" 304 0
-[10/Mar/2020 15:32:58] "GET /static/weui/html/project.html HTTP/1.1" 200 907
-[10/Mar/2020 15:32:58] "GET /static/weui/js/project.js HTTP/1.1" 200 2772
-[10/Mar/2020 15:33:01] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[10/Mar/2020 15:34:01] "GET /static/weui/html/project.html HTTP/1.1" 200 949
-[10/Mar/2020 15:34:01] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[10/Mar/2020 15:34:26] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[10/Mar/2020 15:34:27] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[10/Mar/2020 15:34:30] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[10/Mar/2020 15:34:50] "GET /static/weui/html/project.html HTTP/1.1" 200 939
-[10/Mar/2020 15:34:55] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[10/Mar/2020 15:35:28] "GET /static/weui/html/project.html HTTP/1.1" 200 939
-[10/Mar/2020 15:35:28] "GET /static/weui/lib/weui.min.css HTTP/1.1" 200 51033
-[10/Mar/2020 15:35:28] "GET /static/weui/lib/fastclick.js HTTP/1.1" 200 25965
-[10/Mar/2020 15:35:28] "GET /static/weui/css/jquery-weui.css HTTP/1.1" 200 67323
-[10/Mar/2020 15:35:28] "GET /static/weui/data/data.js HTTP/1.1" 200 2392
-[10/Mar/2020 15:35:28] "GET /static/weui/css/demos.css HTTP/1.1" 200 724
-[10/Mar/2020 15:35:29] "GET /static/weui/js/lib.js HTTP/1.1" 200 955
-[10/Mar/2020 15:35:29] "GET /static/weui/js/project.js HTTP/1.1" 200 2817
-[10/Mar/2020 15:35:29] "GET /static/weui/lib/jquery-2.1.4.js HTTP/1.1" 200 247597
-[10/Mar/2020 15:35:29] "GET /static/weui/js/jquery-weui.js HTTP/1.1" 200 206409
-[10/Mar/2020 15:35:29] "GET /static/weui/js/echarts.js HTTP/1.1" 200 1392863
-[10/Mar/2020 16:13:21] "GET /static/weui/html/project.html HTTP/1.1" 200 960
-[10/Mar/2020 16:13:21] "GET /static/weui/js/project.js HTTP/1.1" 200 2817
-[10/Mar/2020 16:13:21] "GET /static/weui/data/data.js HTTP/1.1" 304 0
-[10/Mar/2020 16:29:27] "GET /static/weui/html/project.html HTTP/1.1" 200 2322
-[10/Mar/2020 16:29:27] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[10/Mar/2020 16:29:54] "GET /static/weui/html/project.html HTTP/1.1" 200 2079
-[10/Mar/2020 16:30:47] "GET /static/weui/html/project.html HTTP/1.1" 200 2773
-[10/Mar/2020 16:31:16] "GET /static/weui/html/project.html HTTP/1.1" 200 2512
-[10/Mar/2020 16:31:17] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[10/Mar/2020 16:50:57] "GET /static/weui/html/project.html HTTP/1.1" 200 2504
-[10/Mar/2020 16:50:57] "GET /static/weui/data/data.js HTTP/1.1" 304 0
-[10/Mar/2020 16:50:57] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[10/Mar/2020 16:51:52] "GET /static/weui/demos/datetime-picker.html HTTP/1.1" 200 6031
-[10/Mar/2020 16:51:59] "GET /static/weui/demos/calendar.html HTTP/1.1" 200 3088
-[10/Mar/2020 16:52:23] "GET /static/weui/demos/action-sheet.html HTTP/1.1" 200 2562
-[10/Mar/2020 16:52:26] "GET /static/weui/demos/flex.html HTTP/1.1" 200 2368
-[10/Mar/2020 16:52:29] "GET /static/weui/demos/cell.html HTTP/1.1" 200 9342
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/index.html HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_cell.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_button.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_dialog.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_toast.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_progress.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_article.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_actionSheet.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_msg.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_icons.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_panel.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_tab.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_search_bar.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_new.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_ptr.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_up.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_picker.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_calendar.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_datetime.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_swiper.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_city.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_select.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:29] "GET /static/weui/demos/images/icon_nav_photo.png HTTP/1.1" 304 0
-[10/Mar/2020 17:09:31] "GET /static/weui/html/input.html HTTP/1.1" 200 3998
-[10/Mar/2020 17:09:31] "GET /static/weui/js/input.js HTTP/1.1" 200 5192
-[10/Mar/2020 17:10:11] "GET /static/weui/html/input.html HTTP/1.1" 304 0
-[10/Mar/2020 17:10:22] "GET /static/weui/html/show.html HTTP/1.1" 304 0
-[10/Mar/2020 17:10:22] "GET /static/weui/js/show.js HTTP/1.1" 200 4719
-[10/Mar/2020 17:10:26] "GET /static/weui/html/show.html HTTP/1.1" 304 0
-[10/Mar/2020 17:11:01] "GET /static/weui/html/show.html HTTP/1.1" 304 0
-[10/Mar/2020 17:11:05] "GET /static/weui/html/show.html HTTP/1.1" 304 0
-[10/Mar/2020 17:11:17] "GET /static/weui/html/show.html HTTP/1.1" 200 1976
-[10/Mar/2020 17:11:17] "GET /static/weui/css/demos.css HTTP/1.1" 200 724
-[10/Mar/2020 17:11:17] "GET /static/weui/css/jquery-weui.css HTTP/1.1" 200 67323
-[10/Mar/2020 17:11:17] "GET /static/weui/lib/fastclick.js HTTP/1.1" 200 25965
-[10/Mar/2020 17:11:17] "GET /static/weui/js/lib.js HTTP/1.1" 200 955
-[10/Mar/2020 17:11:17] "GET /static/weui/lib/weui.min.css HTTP/1.1" 200 51033
-[10/Mar/2020 17:11:17] "GET /static/weui/js/show.js HTTP/1.1" 200 4719
-[10/Mar/2020 17:11:17] "GET /static/weui/lib/jquery-2.1.4.js HTTP/1.1" 200 247597
-[10/Mar/2020 17:11:17] "GET /static/weui/js/jquery-weui.js HTTP/1.1" 200 206409
-[10/Mar/2020 17:11:17] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 646
-[10/Mar/2020 17:11:17] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[10/Mar/2020 17:11:17] "POST /dailyreport/?action=get&date=2020-03-10 HTTP/1.1" 200 646
-[10/Mar/2020 17:11:19] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 200 3998
-[10/Mar/2020 17:11:19] "GET /static/weui/js/input.js HTTP/1.1" 200 5192
-[10/Mar/2020 17:11:19] "GET /static/weui/data/data.js HTTP/1.1" 200 2392
-[10/Mar/2020 17:11:19] "GET /static/weui/js/echarts.js HTTP/1.1" 200 1392863
-[10/Mar/2020 17:11:19] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[11/Mar/2020 10:03:32] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[11/Mar/2020 10:03:32] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 10:03:32] "GET /static/weui/data/data.js HTTP/1.1" 200 2541
-[11/Mar/2020 10:03:32] "GET /static/weui/js/input.js HTTP/1.1" 304 0
-[11/Mar/2020 10:03:32] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[11/Mar/2020 10:03:33] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[11/Mar/2020 10:03:34] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[11/Mar/2020 10:10:20] "GET /static/weui/html/input.html?id=6&department=%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8&date=2020-03-10 HTTP/1.1" 304 0
-[11/Mar/2020 10:10:20] "POST /dailyreport/?action=get&id=6 HTTP/1.1" 200 393
-[11/Mar/2020 10:10:29] "GET /static/weui/html/project.html HTTP/1.1" 200 2504
-[11/Mar/2020 10:10:29] "GET /static/weui/js/project.js HTTP/1.1" 200 2817
-[11/Mar/2020 10:27:09] "GET /static/weui/html/project.html HTTP/1.1" 200 2821
-[11/Mar/2020 10:27:53] "GET /static/weui/html/project.html HTTP/1.1" 200 2839
-[11/Mar/2020 10:40:03] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:40:04] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:40:25] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:40:51] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:40:53] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:40:59] "GET /static/weui/html/project.html HTTP/1.1" 200 2839
-[11/Mar/2020 10:40:59] "GET /static/weui/lib/weui.min.css HTTP/1.1" 200 51033
-[11/Mar/2020 10:40:59] "GET /static/weui/css/jquery-weui.css HTTP/1.1" 200 67323
-[11/Mar/2020 10:40:59] "GET /static/weui/data/data.js HTTP/1.1" 200 2541
-[11/Mar/2020 10:40:59] "GET /static/weui/css/demos.css HTTP/1.1" 200 724
-[11/Mar/2020 10:40:59] "GET /static/weui/lib/fastclick.js HTTP/1.1" 200 25965
-[11/Mar/2020 10:41:00] "GET /static/weui/js/lib.js HTTP/1.1" 200 1703
-[11/Mar/2020 10:41:00] "GET /static/weui/js/project.js HTTP/1.1" 200 3046
-[11/Mar/2020 10:41:00] "GET /static/weui/js/jquery-weui.js HTTP/1.1" 200 206409
-[11/Mar/2020 10:41:00] "GET /static/weui/lib/jquery-2.1.4.js HTTP/1.1" 200 247597
-[11/Mar/2020 10:41:00] "GET /static/weui/js/echarts.js HTTP/1.1" 200 1392863
-[11/Mar/2020 10:45:29] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:45:29] "GET /static/weui/js/lib.js HTTP/1.1" 200 1691
-[11/Mar/2020 10:45:29] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 10:46:07] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:46:07] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 10:46:07] "GET /static/weui/js/project.js HTTP/1.1" 200 3093
-[11/Mar/2020 10:46:27] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:46:27] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 10:46:27] "GET /static/weui/js/lib.js HTTP/1.1" 200 1685
-[11/Mar/2020 10:47:00] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:47:00] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 10:47:00] "GET /static/weui/js/project.js HTTP/1.1" 200 2993
-[11/Mar/2020 10:47:01] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:47:01] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 10:47:44] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:47:44] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 10:47:44] "GET /static/weui/js/project.js HTTP/1.1" 200 3050
-[11/Mar/2020 10:47:45] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:47:45] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 10:48:20] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:48:20] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 10:48:20] "GET /static/weui/js/project.js HTTP/1.1" 200 3009
-[11/Mar/2020 10:48:39] "GET /static/weui/html/show.html HTTP/1.1" 200 1976
-[11/Mar/2020 10:48:39] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 10:48:39] "GET /static/weui/js/show.js HTTP/1.1" 200 4251
-[11/Mar/2020 10:48:39] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[11/Mar/2020 10:48:39] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 23
-[11/Mar/2020 10:48:39] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[11/Mar/2020 10:48:40] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[11/Mar/2020 10:48:40] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 23
-[11/Mar/2020 10:49:22] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:49:22] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 10:49:22] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 10:50:53] "GET /static/weui/html/project.html HTTP/1.1" 200 2839
-[11/Mar/2020 10:50:53] "GET /static/weui/js/project.js HTTP/1.1" 200 2993
-[11/Mar/2020 10:50:53] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 10:52:38] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:52:38] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 10:52:38] "GET /static/weui/js/project.js HTTP/1.1" 200 3809
-[11/Mar/2020 10:53:43] "GET /static/weui/html/project.html HTTP/1.1" 200 2839
-[11/Mar/2020 10:53:43] "GET /static/weui/lib/weui.min.css HTTP/1.1" 200 51033
-[11/Mar/2020 10:53:43] "GET /static/weui/css/jquery-weui.css HTTP/1.1" 200 67323
-[11/Mar/2020 10:53:43] "GET /static/weui/css/demos.css HTTP/1.1" 200 724
-[11/Mar/2020 10:53:43] "GET /static/weui/data/data.js HTTP/1.1" 200 2541
-[11/Mar/2020 10:53:43] "GET /static/weui/lib/fastclick.js HTTP/1.1" 200 25965
-[11/Mar/2020 10:53:43] "GET /static/weui/js/lib.js HTTP/1.1" 200 1685
-[11/Mar/2020 10:53:43] "GET /static/weui/js/project.js HTTP/1.1" 200 3809
-[11/Mar/2020 10:53:43] "GET /static/weui/lib/jquery-2.1.4.js HTTP/1.1" 200 247597
-[11/Mar/2020 10:53:43] "GET /static/weui/js/jquery-weui.js HTTP/1.1" 200 206409
-[11/Mar/2020 10:53:43] "GET /static/weui/js/echarts.js HTTP/1.1" 200 1392863
-[11/Mar/2020 10:53:48] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:54:23] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:54:23] "GET /static/weui/js/project.js HTTP/1.1" 200 3868
-[11/Mar/2020 10:54:49] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:54:49] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 10:54:49] "GET /static/weui/js/project.js HTTP/1.1" 200 3895
-[11/Mar/2020 10:55:33] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:55:34] "GET /static/weui/js/project.js HTTP/1.1" 200 3931
-[11/Mar/2020 10:56:03] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:56:03] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 10:56:03] "GET /static/weui/js/project.js HTTP/1.1" 200 3845
-[11/Mar/2020 10:56:04] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:56:04] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 10:57:26] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 10:57:26] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 10:57:26] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 11:01:39] "GET /static/weui/html/project.html HTTP/1.1" 200 3120
-[11/Mar/2020 11:01:39] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 11:01:39] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 11:02:30] "GET /static/weui/html/project.html HTTP/1.1" 200 3128
-[11/Mar/2020 11:02:30] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 14:17:07] "GET /static/weui/html/show.html HTTP/1.1" 304 0
-[11/Mar/2020 14:17:07] "GET /static/weui/js/show.js HTTP/1.1" 304 0
-[11/Mar/2020 14:17:07] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 14:17:07] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[11/Mar/2020 14:17:07] "POST /dailyreport/?action=get&date=2020-03-12 HTTP/1.1" 200 23
-[11/Mar/2020 14:17:07] "POST /dailyreport/?action=get&date=2020-03-11 HTTP/1.1" 200 23
-[11/Mar/2020 14:17:13] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 14:17:13] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 14:17:13] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 14:17:13] "GET /static/weui/data/data.js HTTP/1.1" 200 2532
-[11/Mar/2020 14:18:07] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 14:19:04] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 14:19:05] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 14:19:20] "GET /static/weui/html/project.html HTTP/1.1" 200 3128
-[11/Mar/2020 14:19:20] "GET /static/weui/css/jquery-weui.css HTTP/1.1" 200 67323
-[11/Mar/2020 14:19:20] "GET /static/weui/lib/weui.min.css HTTP/1.1" 200 51033
-[11/Mar/2020 14:19:20] "GET /static/weui/css/demos.css HTTP/1.1" 200 724
-[11/Mar/2020 14:19:20] "GET /static/weui/data/data.js HTTP/1.1" 200 2532
-[11/Mar/2020 14:19:20] "GET /static/weui/lib/fastclick.js HTTP/1.1" 200 25965
-[11/Mar/2020 14:19:20] "GET /static/weui/js/lib.js HTTP/1.1" 200 1685
-[11/Mar/2020 14:19:21] "GET /static/weui/js/project.js HTTP/1.1" 200 3922
-[11/Mar/2020 14:19:21] "GET /static/weui/js/jquery-weui.js HTTP/1.1" 200 206409
-[11/Mar/2020 14:19:21] "GET /static/weui/lib/jquery-2.1.4.js HTTP/1.1" 200 247597
-[11/Mar/2020 14:19:21] "GET /static/weui/js/echarts.js HTTP/1.1" 200 1392863
-[11/Mar/2020 14:48:23] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 14:48:23] "GET /static/weui/js/lib.js HTTP/1.1" 304 0
-[11/Mar/2020 14:48:23] "GET /static/weui/data/data.js HTTP/1.1" 200 4786
-[11/Mar/2020 14:48:23] "GET /static/weui/js/project.js HTTP/1.1" 200 4111
-[11/Mar/2020 14:48:25] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 14:48:25] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 14:49:16] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 14:49:16] "GET /static/weui/data/data.js HTTP/1.1" 200 4788
-[11/Mar/2020 14:49:16] "GET /static/weui/js/project.js HTTP/1.1" 304 0
-[11/Mar/2020 14:49:17] "GET /static/weui/html/project.html HTTP/1.1" 304 0
-[11/Mar/2020 14:49:17] "GET /static/weui/data/data.js HTTP/1.1" 304 0
+[12/Mar/2020 13:20:32] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 13:20:33] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050
+[12/Mar/2020 13:20:34] "GET /static/weui/html/project.html HTTP/1.1" 304 0
+[12/Mar/2020 13:20:34] "POST /dailyreport/?action=get&type=history&department=%27%E6%95%B0%E5%AD%97%E5%8C%96%E5%88%9B%E6%96%B0%E9%83%A8%27 HTTP/1.1" 200 1050

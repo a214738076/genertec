@@ -50,23 +50,55 @@
           <label for="" class="weui-label">具体项目</label>
         </div>
         <div class="weui-cell__bd">
-          <select class="weui-select" name="select2" id="project" onchange="initTarget()">
+          <select class="weui-select" name="select2" id="project" onchange="initProjectInfo()">
             <option value="1">协同办公类</option>
           </select>
         </div>
         </div>
+    </div>
 
         <div class="weui-cells__title">项目记录</div>
-    <div class="weui-media-box weui-media-box_small-appmsg" id="dailyList"></div>
+         <div class="weui-cells" id="dailyList"></div>
 
-        <div class="weui-cells__title">项目目标</div>
-    <div class="weui-media-box weui-media-box_small-appmsg" id="target"></div>
+        <div class="weui-cells__title">项目信息</div>
+        <div class="weui-cells weui-cells_form">
+
+            <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="" class="weui-label">任务级别</label></div>
+            <div class="weui-cell__bd">
+              <input class="weui-input" id="level" type="text" value="P3"/>
+            </div>
+          </div>
+
+             <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="" class="weui-label">主负责人</label></div>
+            <div class="weui-cell__bd">
+              <input class="weui-input" id="owner" type="text" value="将军"/>
+            </div>
+          </div>
+
+            <div class="weui-cell" id="attenderDisplay" style="display: none" >
+            <div class="weui-cell__hd"><label for="" class="weui-label">重点参与</label></div>
+            <div class="weui-cell__bd">
+              <input class="weui-input" id="attender" type="text" value="战士"/>
+            </div>
+          </div>
+
+             <div class="weui-cell" id="attender1Display" style="display: none">
+            <div class="weui-cell__hd"><label for="" class="weui-label">参与人</label></div>
+            <div class="weui-cell__bd">
+              <input class="weui-input" id="attender1" type="text" />
+            </div>
+          </div>
 
 
     <div class="weui-cells__title">项目雷达</div>
         <div class="weui-cells_bd">
             <div class="box" id="proEcharts"></div>
         </div>
+
+    <div class="weui-cells__title">项目目标</div>
+    <div class="weui-media-box weui-media-box_small-appmsg" id="target"></div>
 
 
 

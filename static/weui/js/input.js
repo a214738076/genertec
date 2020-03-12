@@ -89,6 +89,7 @@ function initPageById(id){
         success:function(result){
             $('#description').val(result.data[0]['description']);
             $('#partner').val(result.data[0]['partner']);
+            $('#department').val(result.data[0]['department']);
 		    var tmpProject = result.data[0]['project'].split(',');
 
 		    if(tmpProject.length == 1){

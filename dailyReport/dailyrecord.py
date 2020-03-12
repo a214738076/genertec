@@ -24,6 +24,14 @@ def getDailyrecord(request):
         ret = getDailyrecordById(id)
         return ret
 
+    type = request.GET.get('type')
+    if type is not None and type == 'history':
+        project = request.POST.get('project')
+        dateStart = request.POST.get('dateStart')
+        dateEnd = request.POST.get('dateEnd')
+        ret = getDailyrecordByProject(project, dateStart, dateEnd)
+        return ret
+
     date = request.GET.get('date')
     department = request.GET.get('department')
 
@@ -33,6 +41,12 @@ def getDailyrecord(request):
 
 def getDailyrecordById(Id):
     res = tbdailyrecord.objects.filter(id = Id)
+    ret = list(res.values())
+
+    return ret
+
+def getDailyrecordByProject(project, dateStart, dateEnd):
+    res = tbdailyrecord.objects.filter(project = project, date__gte = dateStart, date__lte = dateEnd).order_by('-date')
     ret = list(res.values())
 
     return ret

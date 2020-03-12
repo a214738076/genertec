@@ -30,43 +30,7 @@
       data: [
         {
           value: [2, 3, 3, 3, 3, 3, 3],
-          name: '项目1'
-        },
-        {
-          value: [3, 2, 1, 0, 0, 0, 0],
-          name: '项目2'
-        },
-        {
-          value: [2, 3, 3, 3, 3, 3, 3],
-          name: '项目3'
-        },
-        {
-          value: [1, 3, 0, 0, 0, 0, 0],
-          name: 'pro4'
-        },
-        {
-          value: [1, 3, 0, 0, 0, 0, 0],
-          name: 'pro5'
-        },
-        {
-          value: [1, 3, 0, 0, 0, 0, 0],
-          name: 'pro6'
-        },
-        {
-          value: [3, 3, 0, 0, 0, 0, 0],
-          name: 'pro7'
-        },
-        {
-          value: [4, 3, 0, 0, 0, 0, 0],
-          name: 'pro8'
-        },
-        {
-          value: [4, 3, 0, 0, 0, 0, 0],
-          name: 'pro9'
-        },
-        {
-          value: [4, 3, 0, 0, 0, 0, 0],
-          name: 'pro10'
+          name: '协同-协同系统'
         },
       ]
     }]
@@ -82,10 +46,15 @@ $("#department").select({
 });
 
 function init(){
-
     initDomain();
     initProject();
+//    initTarget();
+//    initDailyList();
+}
+
+function initProjectInfo(){
     initTarget();
+    initDailyList();
 }
 
 function initDate(){
@@ -120,6 +89,7 @@ function initProject(){
     }
 
     $('#project').html(tmpHtml);
+    initProjectInfo();
 }
 
 
@@ -127,10 +97,98 @@ function initTarget(){
     var department = $('#department').val();
     var domain = $('#domain').val();
     var project = $('#project').val();
-    console.log(project);
 
-    console.log(projectDetails[department][domain][project]);
-//    console.log(projectDetails[department][domain][project]['target']);
+    var tmpHtml = '';
+    var htmlPre = '<div class="weui-media-box__desc"><div class="weui-cell__bd"><div class="weui-cell"><div class="weui-cell__bd"><p>';
+    var htmlEnd = '</p></div></div> </div></div>';
+    if(domain != '其他' && project != '其他'){
+        var arrTarget = projectDetails[department][domain][project]['target'];
+        for(var i=0; i<arrTarget.length; i++){
+            tmpHtml += htmlPre + (i+1) + '. ' +arrTarget[i] + htmlEnd;
+        }
+        $('#owner').val(projectDetails[department][domain][project]['owner']);
+        $('#level').val(projectDetails[department][domain][project]['level']);
+
+        console.log('begin');
+        console.log(projectDetails[department][domain][project]['attender']);
+        console.log('end');
+
+        var attender = projectDetails[department][domain][project]['attender'];
+        if( typeof(attender) != undefined && attender !== ''){
+             $('#attender').val(attender);
+             $('#attenderDisplay').css('display', 'block');
+        }
+
+        var attender1 = projectDetails[department][domain][project]['attender1'];
+        if(projectDetails[department][domain][project]['attender1']){
+            $('#attender1').val(projectDetails[department][domain][project]['attender1']);
+            $('#attenderDisplay1').css('display', 'block');
+        }
+    }else{
+        tmpHtml = htmlPre + '暂未设定' + htmlEnd;
+    }
+
+    $('#target').html(tmpHtml);
+
+
+}
+
+function getDailyList(){
+     var project = $('#domain').val() + '-' + $('#project').val();
+
+     var data = {
+        'dateStart': $('#dateStart').val(),
+        'dateEnd' : $('#dateEnd').val(),
+        'department': $('#department').val(),
+        'project': project,
+	    'action': 'get',
+    };
+
+    var ret = [];
+
+      $.ajax({
+   		type: "post",
+   		datatype: "json",
+   		async: false,
+   		data: data,
+		url: urlPre + "/dailyreport/?action=get&type=history&department='数字化创新部'",
+   		contentType: "application/x-www-form-urlencoded;charset=UTF-8",
+   		success:function(result){
+    			ret =  result.data;
+		},
+		error: function(e){
+			console.log(e.status);
+			console.log(e.responseText);
+		}
+	});
+
+	return ret;
+}
+
+function initDailyList(){
+    var arrProjectList = getDailyList();
+    var department = $('#department').val();
+
+    var tmphtml = '';
+
+    if(!arrProjectList || arrProjectList.length == 0)
+    {
+           var htmlPre = '<div class="weui-media-box__desc"><div class="weui-cell__bd"><div class="weui-cell"><div class="weui-cell__bd"><p>';
+           var htmlEnd = '</p></div></div> </div></div>';
+           tmphtml = htmlPre + '暂无记录' + htmlEnd;
+    }else{
+        for(i=0; i<arrProjectList.length; i++){
+              var tmpStr = '<a class="weui-cell weui-cell_access" href="input.html?id=' +
+                            arrProjectList[i].id + '&department=' + department + '&date=' + arrProjectList[i].date +
+                            '"><div class="weui-cell__bd"><p>' +
+                            arrProjectList[i].description +
+                            '</p></div> <div class="weui-cell__ft">'+
+                             arrProjectList[i].date +
+                            '</div></a>';
+                tmphtml = tmphtml + tmpStr;
+        }
+    }
+    $('#dailyList').html(tmphtml);
 }
 
 var myChart = echarts.init(document.getElementById('proEcharts'));
